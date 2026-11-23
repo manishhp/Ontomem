@@ -1,0 +1,116 @@
+{
+  "generator": "prefrev-2.0",
+  "seed": 7,
+  "sizes": {
+    "train": 150,
+    "dev": 50,
+    "test": 150
+  },
+  "splits": {
+    "train": {
+      "episodes": 150,
+      "turns": 3559,
+      "statements": 2936,
+      "probes": 1539,
+      "turns_by_case": {
+        "intent": 218,
+        "coverage": 358,
+        "noise": 623,
+        "third_party": 252,
+        "replace": 591,
+        "broad_override": 267,
+        "exception": 388,
+        "context": 250,
+        "reinforce": 210,
+        "trap": 266,
+        "price": 136
+      },
+      "expected_rules": {
+        "NEW": 2166,
+        "R4": 186,
+        "R1": 527,
+        "R6": 126,
+        "R2": 434,
+        "R5": 243,
+        "R3": 119
+      },
+      "surface_kinds": {
+        "label": 2152,
+        "external": 358,
+        "paraphrase": 160,
+        "trap": 266
+      },
+      "sha256": "ba320468cb9ff67d"
+    },
+    "dev": {
+      "episodes": 50,
+      "turns": 1227,
+      "statements": 1001,
+      "probes": 547,
+      "turns_by_case": {
+        "context": 86,
+        "coverage": 99,
+        "exception": 142,
+        "noise": 226,
+        "third_party": 72,
+        "broad_override": 102,
+        "replace": 224,
+        "trap": 90,
+        "intent": 70,
+        "reinforce": 76,
+        "price": 40
+      },
+      "expected_rules": {
+        "NEW": 723,
+        "R2": 157,
+        "R5": 91,
+        "R3": 51,
+        "R6": 36,
+        "R1": 187,
+        "R4": 58
+      },
+      "surface_kinds": {
+        "label": 763,
+        "external": 99,
+        "paraphrase": 49,
+        "trap": 90
+      },
+      "sha256": "2619b442357fe72d"
+    },
+    "test": {
+      "episodes": 150,
+      "turns": 3646,
+      "statements": 2986,
+      "probes": 1506,
+      "turns_by_case": {
+        "intent": 272,
+        "third_party": 292,
+        "noise": 660,
+        "replace": 616,
+        "exception": 382,
+        "price": 136,
+        "reinforce": 184,
+        "context": 238,
+        "coverage": 361,
+        "trap": 250,
+        "broad_override": 255
+      },
+      "expected_rules": {
+        "NEW": 2239,
+        "R2": 422,
+        "R4": 215,
+        "R1": 517,
+        "R6": 146,
+        "R5": 230,
+        "R3": 105
+      },
+      "surface_kinds": {
+        "label": 2244,
+        "paraphrase": 131,
+        "external": 361,
+        "trap": 250
+      },
+      "sha256": "08a5c168fe04cde8"
+    }
+  }
+}

@@ -1,0 +1,2217 @@
+{
+  "table": [
+    {
+      "system": "S0-append-only",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 1.0,
+      "missed_reinforce_rate": 1.0,
+      "false_merge_rate_q": 0.0,
+      "valid_erasures": 0,
+      "valid_erasure_rate": 0.0,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.3705,
+      "contamination": 0.0,
+      "completeness": 1.0,
+      "clean_retrieval": 0.6295,
+      "mean_block_size": 3.49,
+      "ndcg5": 0.9758,
+      "harmful5": 0.0053,
+      "ms_per_write": 0.0042,
+      "ms_per_probe": 0.2541,
+      "usage": {},
+      "stale_exposure_ci": [
+        0.3359,
+        0.4047
+      ],
+      "clean_retrieval_ci": [
+        0.5955,
+        0.6644
+      ],
+      "false_merge_rate_q_ci": [
+        0.0,
+        0.0
+      ],
+      "missed_merge_rate_p_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "system": "S1-rule-surface",
+      "writes": 2986,
+      "revisions": 516,
+      "missed_merge_rate_p": 0.4457,
+      "missed_reinforce_rate": 0.4454,
+      "false_merge_rate_q": 0.069,
+      "valid_erasures": 155,
+      "valid_erasure_rate": 0.0519,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.1972,
+      "contamination": 0.2683,
+      "completeness": 0.7809,
+      "clean_retrieval": 0.5232,
+      "mean_block_size": 3.18,
+      "ndcg5": 0.9053,
+      "harmful5": 0.0133,
+      "ms_per_write": 0.0072,
+      "ms_per_probe": 0.2395,
+      "usage": {},
+      "stale_exposure_ci": [
+        0.1686,
+        0.226
+      ],
+      "clean_retrieval_ci": [
+        0.487,
+        0.5565
+      ],
+      "false_merge_rate_q_ci": [
+        0.0602,
+        0.0774
+      ],
+      "missed_merge_rate_p_ci": [
+        0.4008,
+        0.4876
+      ]
+    },
+    {
+      "system": "S3-OntoMem",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.0193,
+      "missed_reinforce_rate": 0.0304,
+      "false_merge_rate_q": 0.0013,
+      "valid_erasures": 4,
+      "valid_erasure_rate": 0.0013,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.0,
+      "completeness": 0.9973,
+      "clean_retrieval": 0.9847,
+      "mean_block_size": 2.71,
+      "ndcg5": 0.9924,
+      "harmful5": 0.0053,
+      "ms_per_write": 0.0211,
+      "ms_per_probe": 0.2268,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.9742,
+        0.9935
+      ],
+      "false_merge_rate_q_ci": [
+        0.0003,
+        0.003
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0077,
+        0.032
+      ]
+    },
+    {
+      "system": "S4-oracle",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.0,
+      "missed_reinforce_rate": 0.0,
+      "false_merge_rate_q": 0.0,
+      "valid_erasures": 0,
+      "valid_erasure_rate": 0.0,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0,
+      "contamination": 0.0,
+      "completeness": 1.0,
+      "clean_retrieval": 1.0,
+      "mean_block_size": 2.69,
+      "ndcg5": 1.0,
+      "harmful5": 0.0,
+      "ms_per_write": 0.0048,
+      "ms_per_probe": 0.2491,
+      "usage": {},
+      "stale_exposure_ci": [
+        0.0,
+        0.0
+      ],
+      "clean_retrieval_ci": [
+        1.0,
+        1.0
+      ],
+      "false_merge_rate_q_ci": [
+        0.0,
+        0.0
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "system": "S5-learned",
+      "writes": 2986,
+      "revisions": 514,
+      "missed_merge_rate_p": 0.3016,
+      "missed_reinforce_rate": 0.304,
+      "false_merge_rate_q": 0.009,
+      "valid_erasures": 19,
+      "valid_erasure_rate": 0.0064,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.1408,
+      "contamination": 0.0,
+      "completeness": 0.9774,
+      "clean_retrieval": 0.8459,
+      "mean_block_size": 2.91,
+      "ndcg5": 0.9815,
+      "harmful5": 0.0053,
+      "ms_per_write": 0.6534,
+      "ms_per_probe": 0.3051,
+      "usage": {},
+      "stale_exposure_ci": [
+        0.1163,
+        0.1648
+      ],
+      "clean_retrieval_ci": [
+        0.8213,
+        0.8714
+      ],
+      "false_merge_rate_q_ci": [
+        0.0054,
+        0.0136
+      ],
+      "missed_merge_rate_p_ci": [
+        0.2581,
+        0.3471
+      ]
+    },
+    {
+      "system": "S3 -SKOS",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.0193,
+      "missed_reinforce_rate": 0.0304,
+      "false_merge_rate_q": 0.0013,
+      "valid_erasures": 4,
+      "valid_erasure_rate": 0.0013,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.0,
+      "completeness": 0.9973,
+      "clean_retrieval": 0.9847,
+      "mean_block_size": 2.71,
+      "ndcg5": 0.9466,
+      "harmful5": 0.071,
+      "ms_per_write": 0.0141,
+      "ms_per_probe": 0.1551,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.9742,
+        0.9935
+      ],
+      "false_merge_rate_q_ci": [
+        0.0003,
+        0.003
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0077,
+        0.032
+      ]
+    },
+    {
+      "system": "S3 -intent",
+      "writes": 2986,
+      "revisions": 515,
+      "missed_merge_rate_p": 0.0194,
+      "missed_reinforce_rate": 0.0306,
+      "false_merge_rate_q": 0.0462,
+      "valid_erasures": 54,
+      "valid_erasure_rate": 0.0181,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.1182,
+      "completeness": 0.9163,
+      "clean_retrieval": 0.8699,
+      "mean_block_size": 2.77,
+      "ndcg5": 0.9846,
+      "harmful5": 0.0053,
+      "ms_per_write": 0.018,
+      "ms_per_probe": 0.2053,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.8386,
+        0.8977
+      ],
+      "false_merge_rate_q_ci": [
+        0.0384,
+        0.0546
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0077,
+        0.0323
+      ]
+    },
+    {
+      "system": "S3 -context",
+      "writes": 2986,
+      "revisions": 514,
+      "missed_merge_rate_p": 0.0195,
+      "missed_reinforce_rate": 0.0306,
+      "false_merge_rate_q": 0.0412,
+      "valid_erasures": 121,
+      "valid_erasure_rate": 0.0405,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.0657,
+      "completeness": 0.8752,
+      "clean_retrieval": 0.8625,
+      "mean_block_size": 2.64,
+      "ndcg5": 0.9771,
+      "harmful5": 0.012,
+      "ms_per_write": 0.0237,
+      "ms_per_probe": 0.2661,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.8354,
+        0.8889
+      ],
+      "false_merge_rate_q_ci": [
+        0.0337,
+        0.0491
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0078,
+        0.0321
+      ]
+    },
+    {
+      "system": "S3 -who",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.0193,
+      "missed_reinforce_rate": 0.0304,
+      "false_merge_rate_q": 0.0482,
+      "valid_erasures": 142,
+      "valid_erasure_rate": 0.0476,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.0883,
+      "completeness": 0.8493,
+      "clean_retrieval": 0.8367,
+      "mean_block_size": 2.64,
+      "ndcg5": 0.9565,
+      "harmful5": 0.0166,
+      "ms_per_write": 0.0182,
+      "ms_per_probe": 0.1941,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.8103,
+        0.8641
+      ],
+      "false_merge_rate_q_ci": [
+        0.0408,
+        0.0565
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0077,
+        0.032
+      ]
+    },
+    {
+      "system": "S3 -aspect",
+      "writes": 2986,
+      "revisions": 516,
+      "missed_merge_rate_p": 0.0194,
+      "missed_reinforce_rate": 0.0306,
+      "false_merge_rate_q": 0.0228,
+      "valid_erasures": 68,
+      "valid_erasure_rate": 0.0228,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.0,
+      "completeness": 0.9309,
+      "clean_retrieval": 0.919,
+      "mean_block_size": 2.64,
+      "ndcg5": 0.9753,
+      "harmful5": 0.0053,
+      "ms_per_write": 0.0178,
+      "ms_per_probe": 0.1987,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.8993,
+        0.936
+      ],
+      "false_merge_rate_q_ci": [
+        0.018,
+        0.0283
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0078,
+        0.0321
+      ]
+    },
+    {
+      "system": "S3 -R3",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.0193,
+      "missed_reinforce_rate": 0.0304,
+      "false_merge_rate_q": 0.0013,
+      "valid_erasures": 4,
+      "valid_erasure_rate": 0.0013,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0126,
+      "contamination": 0.0,
+      "completeness": 0.9973,
+      "clean_retrieval": 0.9847,
+      "mean_block_size": 2.71,
+      "ndcg5": 0.9819,
+      "harmful5": 0.0259,
+      "ms_per_write": 0.0156,
+      "ms_per_probe": 0.2068,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.0046,
+        0.0225
+      ],
+      "clean_retrieval_ci": [
+        0.9742,
+        0.9935
+      ],
+      "false_merge_rate_q_ci": [
+        0.0003,
+        0.003
+      ],
+      "missed_merge_rate_p_ci": [
+        0.0077,
+        0.032
+      ]
+    }
+  ],
+  "by_case": {
+    "S0-append-only": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S1-rule-surface": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.641,
+        "missed_reinforce_rate": 0.6552,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.3333,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.1891,
+        "valid_erasures": 44,
+        "valid_erasure_rate": 0.1849,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.6667,
+        "missed_reinforce_rate": 0.6667,
+        "false_merge_rate_q": 0.0052,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0026,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 2,
+        "missed_merge_rate_p": 0.5,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.2941,
+        "valid_erasures": 31,
+        "valid_erasure_rate": 0.114,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.1544,
+        "valid_erasures": 21,
+        "valid_erasure_rate": 0.1544,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.5,
+        "missed_reinforce_rate": 0.6196,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.6,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0016,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0016,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.1918,
+        "valid_erasures": 56,
+        "valid_erasure_rate": 0.1918,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.004,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.004,
+        "rejected": 0
+      }
+    },
+    "S3-OntoMem": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0543,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0242,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S4-oracle": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S5-learned": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 36,
+        "missed_merge_rate_p": 0.3611,
+        "missed_reinforce_rate": 0.375,
+        "false_merge_rate_q": 0.0235,
+        "valid_erasures": 5,
+        "valid_erasure_rate": 0.0196,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.6667,
+        "missed_reinforce_rate": 0.5556,
+        "false_merge_rate_q": 0.0236,
+        "valid_erasures": 6,
+        "valid_erasure_rate": 0.0157,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.5,
+        "missed_reinforce_rate": 0.4615,
+        "false_merge_rate_q": 0.0163,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0054,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.4152,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0032,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0016,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0034,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0034,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.02,
+        "valid_erasures": 5,
+        "valid_erasure_rate": 0.02,
+        "rejected": 0
+      }
+    },
+    "S3 -SKOS": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0543,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0242,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -intent": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0105,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 2,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.4816,
+        "valid_erasures": 49,
+        "valid_erasure_rate": 0.1801,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0543,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 329,
+        "missed_merge_rate_p": 0.0243,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0032,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0016,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -context": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.4958,
+        "valid_erasures": 117,
+        "valid_erasure_rate": 0.4916,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 2,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0105,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0549,
+        "false_merge_rate_q": 0.0054,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0054,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0242,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -who": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0543,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0242,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.4795,
+        "valid_erasures": 138,
+        "valid_erasure_rate": 0.4726,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -aspect": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.4559,
+        "valid_erasures": 62,
+        "valid_erasure_rate": 0.4559,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0543,
+        "false_merge_rate_q": 0.0054,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0054,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0242,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.004,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.004,
+        "rejected": 0
+      }
+    },
+    "S3 -R3": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.0513,
+        "missed_reinforce_rate": 0.0345,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0543,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.0242,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    }
+  },
+  "by_surface_kind": {
+    "S0-append-only": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 1.0,
+        "missed_reinforce_rate": 1.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S1-rule-surface": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 362,
+        "missed_merge_rate_p": 0.5856,
+        "missed_reinforce_rate": 0.5987,
+        "false_merge_rate_q": 0.0905,
+        "valid_erasures": 152,
+        "valid_erasure_rate": 0.0677,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.9,
+        "missed_reinforce_rate": 0.8,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.004,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.004,
+        "rejected": 0
+      }
+    },
+    "S3-OntoMem": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0191,
+        "false_merge_rate_q": 0.0009,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0009,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S4-oracle": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S5-learned": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 361,
+        "missed_merge_rate_p": 0.3961,
+        "missed_reinforce_rate": 0.4091,
+        "false_merge_rate_q": 0.0098,
+        "valid_erasures": 14,
+        "valid_erasure_rate": 0.0062,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 19,
+        "missed_merge_rate_p": 0.6316,
+        "missed_reinforce_rate": 0.6,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.02,
+        "valid_erasures": 5,
+        "valid_erasure_rate": 0.02,
+        "rejected": 0
+      }
+    },
+    "S3 -SKOS": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0191,
+        "false_merge_rate_q": 0.0009,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0009,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -intent": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 361,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0192,
+        "false_merge_rate_q": 0.0606,
+        "valid_erasures": 52,
+        "valid_erasure_rate": 0.0232,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -context": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 360,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0192,
+        "false_merge_rate_q": 0.0526,
+        "valid_erasures": 116,
+        "valid_erasure_rate": 0.0517,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0382,
+        "valid_erasures": 5,
+        "valid_erasure_rate": 0.0382,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -who": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0191,
+        "false_merge_rate_q": 0.0588,
+        "valid_erasures": 131,
+        "valid_erasure_rate": 0.0584,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0916,
+        "valid_erasures": 11,
+        "valid_erasure_rate": 0.084,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -aspect": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 362,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0191,
+        "false_merge_rate_q": 0.0276,
+        "valid_erasures": 62,
+        "valid_erasure_rate": 0.0276,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0382,
+        "valid_erasures": 5,
+        "valid_erasure_rate": 0.0382,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.004,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.004,
+        "rejected": 0
+      }
+    },
+    "S3 -R3": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.0083,
+        "missed_reinforce_rate": 0.0191,
+        "false_merge_rate_q": 0.0009,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0009,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    }
+  },
+  "error_stages": {
+    "S0-append-only": {
+      "mapping:unmapped": 111,
+      "keying": 377,
+      "mapping:wrong-concept": 27,
+      "mapping:earlier-statement": 2
+    },
+    "S1-rule-surface": {
+      "mapping:unmapped": 6,
+      "keying": 218,
+      "mapping:earlier-statement": 206,
+      "mapping:wrong-concept": 4
+    },
+    "S3-OntoMem": {
+      "mapping:unmapped": 5,
+      "mapping:wrong-concept": 5,
+      "mapping:earlier-statement": 4
+    },
+    "S4-oracle": {},
+    "S5-learned": {
+      "mapping:unmapped": 5,
+      "keying": 172,
+      "mapping:wrong-concept": 2,
+      "mapping:earlier-statement": 1
+    },
+    "S3 -SKOS": {
+      "mapping:unmapped": 5,
+      "mapping:wrong-concept": 5,
+      "mapping:earlier-statement": 4
+    },
+    "S3 -intent": {
+      "mapping:unmapped": 5,
+      "mapping:earlier-statement": 138,
+      "mapping:wrong-concept": 5
+    },
+    "S3 -context": {
+      "mapping:unmapped": 5,
+      "mapping:earlier-statement": 123,
+      "mapping:wrong-concept": 5
+    },
+    "S3 -who": {
+      "mapping:unmapped": 6,
+      "mapping:earlier-statement": 142,
+      "mapping:wrong-concept": 6
+    },
+    "S3 -aspect": {
+      "mapping:unmapped": 5,
+      "mapping:earlier-statement": 67,
+      "mapping:wrong-concept": 6
+    },
+    "S3 -R3": {
+      "mapping:unmapped": 5,
+      "mapping:wrong-concept": 5,
+      "mapping:earlier-statement": 4
+    }
+  },
+  "tests_clean_retrieval_vs_S3": {
+    "S0-append-only": {
+      "a_only": 537,
+      "b_only": 2,
+      "discordant": 539,
+      "p_value": 4.55421890851725e-117,
+      "odds_ratio": 215.0,
+      "p_holm": 4.0987970176655245e-116
+    },
+    "S1-rule-surface": {
+      "a_only": 697,
+      "b_only": 2,
+      "discordant": 699,
+      "p_value": 7.243955727691817e-152,
+      "odds_ratio": 279.0,
+      "p_holm": 7.243955727691817e-151
+    },
+    "S4-oracle": {
+      "a_only": 0,
+      "b_only": 23,
+      "discordant": 23,
+      "p_value": 2.384185791015625e-07,
+      "odds_ratio": 0.02127659574468085,
+      "p_holm": 7.152557373046875e-07
+    },
+    "S5-learned": {
+      "a_only": 213,
+      "b_only": 4,
+      "discordant": 217,
+      "p_value": 2.8615348957348515e-45,
+      "odds_ratio": 47.44444444444444,
+      "p_holm": 2.003074427014396e-44
+    },
+    "S3 -SKOS": {
+      "a_only": 0,
+      "b_only": 0,
+      "discordant": 0,
+      "p_value": 1.0,
+      "odds_ratio": 1.0,
+      "p_holm": 1.0
+    },
+    "S3 -intent": {
+      "a_only": 173,
+      "b_only": 0,
+      "discordant": 173,
+      "p_value": 4.461672911034553e-39,
+      "odds_ratio": 347.0,
+      "p_holm": 2.2308364555172766e-38
+    },
+    "S3 -context": {
+      "a_only": 184,
+      "b_only": 0,
+      "discordant": 184,
+      "p_value": 1.7683394700902992e-41,
+      "odds_ratio": 369.0,
+      "p_holm": 1.0610036820541795e-40
+    },
+    "S3 -who": {
+      "a_only": 223,
+      "b_only": 0,
+      "discordant": 223,
+      "p_value": 5.461125645965371e-50,
+      "odds_ratio": 447.0,
+      "p_holm": 4.3689005167722966e-49
+    },
+    "S3 -aspect": {
+      "a_only": 99,
+      "b_only": 0,
+      "discordant": 99,
+      "p_value": 6.897455478349588e-23,
+      "odds_ratio": 199.0,
+      "p_holm": 2.758982191339835e-22
+    },
+    "S3 -R3": {
+      "a_only": 0,
+      "b_only": 0,
+      "discordant": 0,
+      "p_value": 1.0,
+      "odds_ratio": 1.0,
+      "p_holm": 1.0
+    }
+  },
+  "meta": {
+    "mode": "A",
+    "split": "test",
+    "episodes": 150,
+    "noise": 0.0,
+    "systems": [
+      "S0-append-only",
+      "S1-rule-surface",
+      "S3-OntoMem",
+      "S4-oracle",
+      "S5-learned",
+      "S3 -SKOS",
+      "S3 -intent",
+      "S3 -context",
+      "S3 -who",
+      "S3 -aspect",
+      "S3 -R3"
+    ],
+    "notes": {
+      "S5": {
+        "pairs": 14829,
+        "positives": 770,
+        "threshold": 0.5,
+        "dev_errors": 94,
+        "train_accuracy": 0.9869175264684065,
+        "features": [
+          "surf_eq",
+          "head_eq",
+          "tok_jaccard",
+          "ratio",
+          "token_set",
+          "partial",
+          "who_eq",
+          "intent_eq",
+          "context_eq",
+          "aspect_eq",
+          "sign_flip",
+          "log_gap_days",
+          "len_diff"
+        ]
+      }
+    },
+    "seconds": 26.9,
+    "ontology_version": "1.0.0",
+    "missed_extractions": 0,
+    "gold_statements": 2986,
+    "created": "2026-11-10T04:11:13"
+  }
+}

@@ -1,0 +1,100 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix pref: <https://w3id.org/ontomem/pref#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# ===========================================================================
+# Node-level shape: checked on every write (incremental validation of the new
+# node's focus subgraph). A violation is sent back to the extractor for repair.
+# ===========================================================================
+pref:PreferenceShape a sh:NodeShape ;
+    sh:targetClass pref:Preference ;
+    sh:closed false ;
+
+    sh:property [ sh:path pref:holder ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:message "a preference needs exactly one holder" ] ;
+    sh:property [ sh:path pref:subjectRole ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( "self" "partner" "child" "parent" "friend" "colleague" "sibling" ) ;
+                  sh:message "subjectRole must be one of the known roles" ] ;
+
+    # WHAT: either a known SKOS concept, or (coverage gap) an unmapped label - never both, never neither
+    sh:xone (
+        [ sh:path pref:concept ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ]
+        [ sh:path pref:unmappedLabel ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ]
+    ) ;
+
+    sh:property [ sh:path pref:aspect ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( "general" "price" "quality" "setting" "timing" ) ;
+                  sh:message "aspect must be general|price|quality|setting|timing" ] ;
+    sh:property [ sh:path pref:intent ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( "standing" "past" "plan" ) ;
+                  sh:message "intent must be standing|past|plan" ] ;
+    sh:property [ sh:path pref:context ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( "any" "home" "work" "travel" "social" "family" ) ;
+                  sh:message "context must be any|home|work|travel|social|family" ] ;
+    sh:property [ sh:path pref:polarity ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( "likes" "dislikes" "avoids" "neutral" ) ;
+                  sh:message "polarity must be likes|dislikes|avoids|neutral" ] ;
+    sh:property [ sh:path pref:reason ; sh:maxCount 1 ;
+                  sh:in ( "taste" "health" "allergy" "ethics" "religion" "budget" "unspecified" ) ] ;
+    sh:property [ sh:path pref:strength ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
+                  sh:minInclusive 0.0 ; sh:maxInclusive 1.0 ;
+                  sh:message "strength must be a decimal in [0, 1]" ] ;
+    sh:property [ sh:path pref:statedAt ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:dateTime ;
+                  sh:message "statedAt (date of the turn) is required" ] ;
+    sh:property [ sh:path pref:status ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "active" "retired" ) ] ;
+    sh:property [ sh:path pref:sourceText ; sh:minCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ;
+                  sh:message "the user's own sentence must be kept as provenance" ] ;
+    sh:property [ sh:path pref:slotKey ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path pref:supersededBy ; sh:maxCount 1 ; sh:class pref:Preference ] .
+
+# ===========================================================================
+# Graph-level shapes: whole-memory integrity (invariants I1 and I2).
+# Run by /validate and in tests, not on every write.
+# ===========================================================================
+pref:RetiredShape a sh:NodeShape ;
+    sh:targetClass pref:Preference ;
+    sh:sparql [
+        sh:message "I2: a retired preference must name its successor and have validTo" ;
+        sh:prefixes pref: ;
+        sh:select """
+            PREFIX pref: <https://w3id.org/ontomem/pref#>
+            SELECT $this WHERE {
+                $this pref:status "retired" .
+                FILTER ( NOT EXISTS { $this pref:supersededBy ?s } || NOT EXISTS { $this pref:validTo ?t } )
+            }""" ] .
+
+pref:KeyUniquenessShape a sh:NodeShape ;
+    sh:targetClass pref:Preference ;
+    sh:sparql [
+        sh:message "I1: two active preferences share the same slot key" ;
+        sh:select """
+            PREFIX pref: <https://w3id.org/ontomem/pref#>
+            SELECT $this ?value WHERE {
+                $this  pref:status "active" ; pref:slotKey ?value .
+                ?other pref:status "active" ; pref:slotKey ?value .
+                FILTER ( $this != ?other )
+            }""" ] .
+
+pref:SameSlotSupersessionShape a sh:NodeShape ;
+    sh:targetClass pref:Preference ;
+    sh:sparql [
+        sh:message "a preference can only be superseded by one for the same slot" ;
+        sh:select """
+            PREFIX pref: <https://w3id.org/ontomem/pref#>
+            SELECT $this ?value WHERE {
+                $this pref:supersededBy ?value ; pref:slotKey ?k1 .
+                ?value pref:slotKey ?k2 .
+                FILTER ( ?k1 != ?k2 )
+            }""" ] .
+
+pref:NoCycleShape a sh:NodeShape ;
+    sh:targetClass pref:Preference ;
+    sh:sparql [
+        sh:message "supersession chain contains a cycle" ;
+        sh:select """
+            PREFIX pref: <https://w3id.org/ontomem/pref#>
+            SELECT $this WHERE { $this pref:supersededBy+ $this . }""" ] .
+
+pref: sh:declare [ sh:prefix "pref" ; sh:namespace "https://w3id.org/ontomem/pref#"^^xsd:anyURI ] .

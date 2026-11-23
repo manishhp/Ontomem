@@ -1,0 +1,143 @@
+{
+  "scenarios": [
+    {
+      "id": "spicy",
+      "title": "Spicy food, revised",
+      "rule": "R1",
+      "summary": "A preference changes. The old value is retired to history, not deleted, and never shown again.",
+      "turns": [
+        {"ts": "2026-03-02T19:00:00", "text": "I love spicy food, the hotter the better."},
+        {"ts": "2026-06-02T20:15:00", "text": "Spicy food doesn't agree with me any more."},
+        {"ts": "2026-10-04T19:30:00", "text": "Any dinner ideas?"}
+      ]
+    },
+    {
+      "id": "sushi",
+      "title": "Avoids seafood, loves sushi",
+      "rule": "R2",
+      "summary": "A narrower preference is an exception, not a contradiction: both are kept and the specific one wins.",
+      "turns": [
+        {"ts": "2026-02-10T13:00:00", "text": "I avoid seafood."},
+        {"ts": "2026-04-01T20:00:00", "text": "Sushi is the exception though, I love it."},
+        {"ts": "2026-05-01T19:00:00", "text": "Any dinner ideas?"}
+      ]
+    },
+    {
+      "id": "override",
+      "title": "A later, broader statement",
+      "rule": "R3",
+      "summary": "When a broad statement comes after the exception, OntoMem keeps both but asks before relying on the exception.",
+      "turns": [
+        {"ts": "2026-02-10T13:00:00", "text": "I avoid seafood, but I love sushi."},
+        {"ts": "2026-07-15T18:00:00", "text": "No seafood at all for me now."},
+        {"ts": "2026-07-20T19:00:00", "text": "What should I eat tonight?"}
+      ]
+    },
+    {
+      "id": "paris",
+      "title": "Paris: memory vs plan",
+      "rule": "R4",
+      "summary": "A past experience and a future plan about the same place are different slots - no conflict.",
+      "turns": [
+        {"ts": "2026-01-20T10:00:00", "text": "We loved our Paris trip last year!"},
+        {"ts": "2026-03-05T21:00:00", "text": "Planning to go back to Paris next summer."},
+        {"ts": "2026-03-06T09:00:00", "text": "Any trip ideas?"}
+      ]
+    },
+    {
+      "id": "mushrooms",
+      "title": "My wife hates mushrooms",
+      "rule": "R6",
+      "summary": "Statements about other people go into their own slots and never overwrite the user's.",
+      "turns": [
+        {"ts": "2026-02-01T19:00:00", "text": "I love mushrooms."},
+        {"ts": "2026-02-08T19:00:00", "text": "My wife hates mushrooms though."},
+        {"ts": "2026-02-09T18:00:00", "text": "What should I cook for my wife?"}
+      ]
+    },
+    {
+      "id": "trap",
+      "title": "Spicy food vs spicy thrillers",
+      "rule": "trap",
+      "summary": "Similar words, different slots. A surface-matching memory would merge these; the ontology does not.",
+      "turns": [
+        {"ts": "2026-03-01T19:00:00", "text": "Spicy food doesn't agree with me."},
+        {"ts": "2026-03-20T22:00:00", "text": "I'm really into spicy thrillers lately."},
+        {"ts": "2026-03-21T21:00:00", "text": "What should I watch tonight?"}
+      ]
+    },
+    {
+      "id": "coffee",
+      "title": "Coffee at work, not at home",
+      "rule": "context",
+      "summary": "The same concept can be liked in one context and avoided in another.",
+      "turns": [
+        {"ts": "2026-04-01T08:00:00", "text": "At home, I avoid coffee."},
+        {"ts": "2026-04-02T10:30:00", "text": "At work I love coffee."},
+        {"ts": "2026-04-03T09:00:00", "text": "What should I get for a work lunch?"}
+      ]
+    },
+    {
+      "id": "vegan",
+      "title": "Going vegan",
+      "rule": "identity",
+      "summary": "One identity statement expands into several hard constraints that veto whole branches of the catalog.",
+      "turns": [
+        {"ts": "2026-05-01T19:00:00", "text": "I love butter chicken and cheese."},
+        {"ts": "2026-08-01T19:00:00", "text": "I'm vegan now."},
+        {"ts": "2026-08-02T19:00:00", "text": "Any dinner ideas?"}
+      ]
+    },
+    {
+      "id": "price",
+      "title": "Loves sushi, hates the price",
+      "rule": "aspect",
+      "summary": "Liking a thing and disliking its price are separate aspects of the same concept.",
+      "turns": [
+        {"ts": "2026-02-01T19:00:00", "text": "I love sushi."},
+        {"ts": "2026-02-15T19:00:00", "text": "Sushi is way too expensive though."},
+        {"ts": "2026-02-16T19:00:00", "text": "Suggest something for lunch."}
+      ]
+    }
+  ],
+  "demo_users": [
+    {
+      "username": "asha",
+      "display_name": "Asha Rao",
+      "password": "demo1234",
+      "turns": [
+        {"ts": "2026-01-06T19:10:00", "text": "I love spicy food and South Indian food."},
+        {"ts": "2026-01-14T12:30:00", "text": "I avoid seafood."},
+        {"ts": "2026-01-28T20:05:00", "text": "But I love sushi!"},
+        {"ts": "2026-02-09T21:00:00", "text": "We loved our Goa trip last year."},
+        {"ts": "2026-02-20T22:40:00", "text": "I'm really into psychological thrillers lately."},
+        {"ts": "2026-03-03T18:00:00", "text": "My husband can't stand horror movies."},
+        {"ts": "2026-03-17T09:00:00", "text": "At work I love coffee."},
+        {"ts": "2026-04-02T19:45:00", "text": "Not a fan of red-eye flights."},
+        {"ts": "2026-04-19T20:00:00", "text": "Planning to go to Japan next spring."},
+        {"ts": "2026-05-11T19:30:00", "text": "I think I kind of like jazz."},
+        {"ts": "2026-06-02T20:15:00", "text": "Spicy food doesn't agree with me any more."},
+        {"ts": "2026-06-21T13:00:00", "text": "Sushi is way too expensive though."},
+        {"ts": "2026-07-08T19:00:00", "text": "I'm lactose intolerant."},
+        {"ts": "2026-08-14T21:30:00", "text": "Honestly I love Italian food these days."},
+        {"ts": "2026-09-05T19:00:00", "text": "I can't stand crowded places when travelling."},
+        {"ts": "2026-10-01T20:00:00", "text": "I'm a huge fan of kombucha."}
+      ]
+    },
+    {
+      "username": "rahul",
+      "display_name": "Rahul Menon",
+      "password": "demo1234",
+      "turns": [
+        {"ts": "2026-02-02T19:00:00", "text": "I love meat, especially chicken wings."},
+        {"ts": "2026-02-20T20:00:00", "text": "My daughter is allergic to peanuts."},
+        {"ts": "2026-03-10T18:00:00", "text": "Big fan of rock music and metal."},
+        {"ts": "2026-04-04T21:00:00", "text": "I can't stand reality TV."},
+        {"ts": "2026-05-05T19:00:00", "text": "I've given up red meat."},
+        {"ts": "2026-06-01T19:00:00", "text": "I had a great time in Ladakh."},
+        {"ts": "2026-07-12T19:00:00", "text": "With the kids, I prefer animated movies."},
+        {"ts": "2026-08-30T19:00:00", "text": "I'm not into metal anymore."}
+      ]
+    }
+  ]
+}

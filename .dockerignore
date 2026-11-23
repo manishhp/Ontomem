@@ -1,0 +1,9 @@
+.git
+var
+**/__pycache__
+**/node_modules
+frontend/dist
+.pytest_cache
+.hypothesis
+.ruff_cache
+docs/screenshots

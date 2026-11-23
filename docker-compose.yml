@@ -1,0 +1,22 @@
+# docker compose up --build              -> http://localhost:8000
+# docker compose --profile llm up        -> also starts Ollama for the LLM baselines / extractor
+services:
+  ontomem:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      ONTOMEM_SECRET: ${ONTOMEM_SECRET:-change-me-to-a-long-random-string-please}
+      ONTOMEM_LLM: ${ONTOMEM_LLM:-}
+      OLLAMA_HOST: http://ollama:11434
+    volumes: ["ontomem-data:/data"]
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["llm"]
+    ports: ["11434:11434"]
+    volumes: ["ollama:/root/.ollama"]
+
+volumes:
+  ontomem-data:
+  ollama:

@@ -1,0 +1,3 @@
+system,missed_merge_rate_p,false_merge_rate_q,valid_erasures,stale_exposure,contamination,completeness,clean_retrieval,ndcg5,harmful5,ms_per_write
+S3-OntoMem (SHACL+repair),0.1335,0.003,6,0.0724,0.0027,0.8386,0.8227,0.9621,0.0259,0.0243
+S3 -SHACL,0.1702,0.0013,4,0.1062,0.0,0.8134,0.7902,0.9599,0.0292,0.021

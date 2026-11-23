@@ -1,0 +1,430 @@
+{
+  "table": [
+    {
+      "system": "S3-OntoMem (SHACL+repair)",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.1335,
+      "missed_reinforce_rate": 0.1174,
+      "false_merge_rate_q": 0.003,
+      "valid_erasures": 6,
+      "valid_erasure_rate": 0.002,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.0724,
+      "contamination": 0.0027,
+      "completeness": 0.8386,
+      "clean_retrieval": 0.8227,
+      "mean_block_size": 2.59,
+      "ndcg5": 0.9621,
+      "harmful5": 0.0259,
+      "ms_per_write": 0.0243,
+      "ms_per_probe": 0.2121,
+      "usage": {
+        "rejected": 0,
+        "repaired": 451
+      },
+      "stale_exposure_ci": [
+        0.0518,
+        0.0964
+      ],
+      "clean_retrieval_ci": [
+        0.7889,
+        0.8557
+      ],
+      "false_merge_rate_q_ci": [
+        0.0013,
+        0.0049
+      ],
+      "missed_merge_rate_p_ci": [
+        0.1052,
+        0.1628
+      ]
+    },
+    {
+      "system": "S3 -SHACL",
+      "writes": 2986,
+      "revisions": 517,
+      "missed_merge_rate_p": 0.1702,
+      "missed_reinforce_rate": 0.1652,
+      "false_merge_rate_q": 0.0013,
+      "valid_erasures": 4,
+      "valid_erasure_rate": 0.0013,
+      "rejected": 0,
+      "probes": 1506,
+      "stale_exposure": 0.1062,
+      "contamination": 0.0,
+      "completeness": 0.8134,
+      "clean_retrieval": 0.7902,
+      "mean_block_size": 2.61,
+      "ndcg5": 0.9599,
+      "harmful5": 0.0292,
+      "ms_per_write": 0.021,
+      "ms_per_probe": 0.2035,
+      "usage": {
+        "rejected": 0,
+        "repaired": 0
+      },
+      "stale_exposure_ci": [
+        0.084,
+        0.1315
+      ],
+      "clean_retrieval_ci": [
+        0.7556,
+        0.8212
+      ],
+      "false_merge_rate_q_ci": [
+        0.0003,
+        0.003
+      ],
+      "missed_merge_rate_p_ci": [
+        0.1402,
+        0.2008
+      ]
+    }
+  ],
+  "by_case": {
+    "S3-OntoMem (SHACL+repair)": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.1538,
+        "missed_reinforce_rate": 0.1034,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0084,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0084,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.1,
+        "missed_reinforce_rate": 0.0984,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.2222,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.011,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0074,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0074,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.25,
+        "missed_reinforce_rate": 0.1413,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.1485,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -SHACL": {
+      "broad_override": {
+        "writes": 255,
+        "revisions": 39,
+        "missed_merge_rate_p": 0.1795,
+        "missed_reinforce_rate": 0.1552,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "context": {
+        "writes": 238,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0042,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0042,
+        "rejected": 0
+      },
+      "coverage": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.1308,
+        "missed_reinforce_rate": 0.1475,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "exception": {
+        "writes": 382,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.2222,
+        "false_merge_rate_q": 0.0079,
+        "valid_erasures": 3,
+        "valid_erasure_rate": 0.0079,
+        "rejected": 0
+      },
+      "intent": {
+        "writes": 272,
+        "revisions": 3,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "price": {
+        "writes": 136,
+        "revisions": 1,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "reinforce": {
+        "writes": 184,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.25,
+        "missed_reinforce_rate": 0.1848,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "replace": {
+        "writes": 616,
+        "revisions": 330,
+        "missed_merge_rate_p": 0.1909,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "third_party": {
+        "writes": 292,
+        "revisions": 0,
+        "missed_merge_rate_p": null,
+        "missed_reinforce_rate": null,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.5,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    }
+  },
+  "by_surface_kind": {
+    "S3-OntoMem (SHACL+repair)": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.1,
+        "missed_reinforce_rate": 0.0984,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.135,
+        "missed_reinforce_rate": 0.0955,
+        "false_merge_rate_q": 0.0031,
+        "valid_erasures": 4,
+        "valid_erasure_rate": 0.0018,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.6,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    },
+    "S3 -SHACL": {
+      "external": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.1308,
+        "missed_reinforce_rate": 0.1475,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "label": {
+        "writes": 2244,
+        "revisions": 363,
+        "missed_merge_rate_p": 0.1763,
+        "missed_reinforce_rate": 0.1401,
+        "false_merge_rate_q": 0.0009,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0009,
+        "rejected": 0
+      },
+      "paraphrase": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.6,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      },
+      "trap": {
+        "writes": 250,
+        "revisions": 4,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.5,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      }
+    }
+  },
+  "error_stages": {
+    "S3-OntoMem (SHACL+repair)": {
+      "mapping:unmapped": 13,
+      "malformed:who": 8,
+      "malformed:intent": 14,
+      "keying": 21,
+      "malformed:context": 6,
+      "mapping:wrong-concept": 5,
+      "mapping:earlier-statement": 8,
+      "malformed:strength": 1,
+      "malformed:polarity": 1,
+      "malformed:aspect": 1
+    },
+    "S3 -SHACL": {
+      "mapping:unmapped": 16,
+      "malformed:who": 8,
+      "malformed:aspect": 10,
+      "malformed:intent": 14,
+      "keying": 26,
+      "malformed:context": 6,
+      "mapping:wrong-concept": 5,
+      "mapping:earlier-statement": 4,
+      "malformed:strength": 1,
+      "malformed:polarity": 2
+    }
+  },
+  "tests_clean_retrieval_vs_S3": {
+    "S3 -SHACL": {
+      "a_only": 55,
+      "b_only": 6,
+      "discordant": 61,
+      "p_value": 7.957640467801928e-10,
+      "odds_ratio": 8.538461538461538,
+      "p_holm": 7.957640467801928e-10
+    }
+  },
+  "meta": {
+    "mode": "A",
+    "split": "test",
+    "episodes": 150,
+    "noise": 0.15,
+    "systems": [
+      "S3-OntoMem (SHACL+repair)",
+      "S3 -SHACL"
+    ],
+    "notes": {},
+    "seconds": 3.8,
+    "ontology_version": "1.0.0",
+    "missed_extractions": 0,
+    "gold_statements": 2986,
+    "created": "2026-11-10T04:11:47"
+  }
+}

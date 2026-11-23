@@ -1,0 +1,38 @@
+[
+  {
+    "statements": 100,
+    "active_slots": 97,
+    "nodes": 98,
+    "write_ms_p50": 0.013,
+    "write_ms_p95": 0.041,
+    "read_ms_p50": 0.25,
+    "read_ms_p95": 0.59,
+    "read_ms_p99": 0.78,
+    "deadline_ms": 50.0,
+    "deadline_miss_rate": 0.0
+  },
+  {
+    "statements": 1000,
+    "active_slots": 918,
+    "nodes": 980,
+    "write_ms_p50": 0.014,
+    "write_ms_p95": 0.052,
+    "read_ms_p50": 2.47,
+    "read_ms_p95": 5.34,
+    "read_ms_p99": 5.42,
+    "deadline_ms": 50.0,
+    "deadline_miss_rate": 0.0
+  },
+  {
+    "statements": 10000,
+    "active_slots": 6452,
+    "nodes": 9093,
+    "write_ms_p50": 0.035,
+    "write_ms_p95": 0.193,
+    "read_ms_p50": 27.6,
+    "read_ms_p95": 34.89,
+    "read_ms_p99": 36.91,
+    "deadline_ms": 50.0,
+    "deadline_miss_rate": 0.0
+  }
+]

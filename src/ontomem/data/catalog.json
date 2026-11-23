@@ -1,0 +1,1480 @@
+{
+ "version": "1.0.0",
+ "items": [
+  {
+   "id": "fo001",
+   "domain": "Food",
+   "name": "Salmon nigiri platter",
+   "concepts": [
+    "Sushi",
+    "JapaneseCuisine"
+   ],
+   "description": "Eight pieces of salmon nigiri with pickled ginger.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo002",
+   "domain": "Food",
+   "name": "Vegetable maki rolls",
+   "concepts": [
+    "Sushi",
+    "JapaneseCuisine",
+    "VegetarianFood"
+   ],
+   "description": "Cucumber and avocado maki, no fish.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo003",
+   "domain": "Food",
+   "name": "Prawn curry with rice",
+   "concepts": [
+    "Shrimp",
+    "Curry",
+    "IndianCuisine",
+    "SpicyFood",
+    "Rice"
+   ],
+   "description": "Coastal-style prawn curry, medium hot.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo004",
+   "domain": "Food",
+   "name": "Goan fish curry",
+   "concepts": [
+    "Fish",
+    "Curry",
+    "IndianCuisine",
+    "SpicyFood"
+   ],
+   "description": "Kokum-tangy fish curry from Goa.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo005",
+   "domain": "Food",
+   "name": "Grilled salmon with greens",
+   "concepts": [
+    "Salmon",
+    "Vegetables"
+   ],
+   "description": "Pan-grilled salmon, lemon butter, saut\u00e9ed greens.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo006",
+   "domain": "Food",
+   "name": "Butter garlic crab",
+   "concepts": [
+    "Crab",
+    "Shellfish"
+   ],
+   "description": "Mangalorean butter garlic crab.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo007",
+   "domain": "Food",
+   "name": "Lobster thermidor",
+   "concepts": [
+    "Lobster",
+    "Shellfish"
+   ],
+   "description": "Classic baked lobster.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo008",
+   "domain": "Food",
+   "name": "Tonkotsu ramen",
+   "concepts": [
+    "Ramen",
+    "JapaneseCuisine",
+    "RedMeat"
+   ],
+   "description": "Rich pork-bone broth ramen.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo009",
+   "domain": "Food",
+   "name": "Vegetable tempura",
+   "concepts": [
+    "Tempura",
+    "JapaneseCuisine",
+    "VegetarianFood",
+    "FriedFood"
+   ],
+   "description": "Lightly battered seasonal vegetables.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo010",
+   "domain": "Food",
+   "name": "Paneer tikka masala",
+   "concepts": [
+    "Paneer",
+    "NorthIndianCuisine",
+    "Curry",
+    "SpicyFood",
+    "VegetarianFood"
+   ],
+   "description": "Smoky paneer in a spiced tomato gravy.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo011",
+   "domain": "Food",
+   "name": "Dal makhani with naan",
+   "concepts": [
+    "NorthIndianCuisine",
+    "VegetarianFood",
+    "Bread",
+    "Dairy"
+   ],
+   "description": "Slow-cooked black lentils, butter, cream.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo012",
+   "domain": "Food",
+   "name": "Masala dosa",
+   "concepts": [
+    "SouthIndianCuisine",
+    "VegetarianFood"
+   ],
+   "description": "Crisp dosa with potato masala, sambar and chutney.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo013",
+   "domain": "Food",
+   "name": "Idli sambar",
+   "concepts": [
+    "SouthIndianCuisine",
+    "VegetarianFood"
+   ],
+   "description": "Steamed rice cakes with lentil sambar.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo014",
+   "domain": "Food",
+   "name": "Chicken biryani",
+   "concepts": [
+    "Rice",
+    "Poultry",
+    "IndianCuisine",
+    "SpicyFood"
+   ],
+   "description": "Hyderabadi dum biryani.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo015",
+   "domain": "Food",
+   "name": "Mutton rogan josh",
+   "concepts": [
+    "RedMeat",
+    "Curry",
+    "NorthIndianCuisine",
+    "SpicyFood"
+   ],
+   "description": "Kashmiri slow-braised mutton.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo016",
+   "domain": "Food",
+   "name": "Butter chicken",
+   "concepts": [
+    "Poultry",
+    "NorthIndianCuisine",
+    "Curry",
+    "Dairy"
+   ],
+   "description": "Mild, creamy tomato chicken curry.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo017",
+   "domain": "Food",
+   "name": "Margherita pizza",
+   "concepts": [
+    "Pizza",
+    "ItalianCuisine",
+    "Cheese"
+   ],
+   "description": "Wood-fired tomato, mozzarella, basil.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo018",
+   "domain": "Food",
+   "name": "Mushroom risotto",
+   "concepts": [
+    "Mushroom",
+    "ItalianCuisine",
+    "Rice",
+    "Cheese"
+   ],
+   "description": "Arborio rice with porcini and parmesan.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo019",
+   "domain": "Food",
+   "name": "Spaghetti aglio e olio",
+   "concepts": [
+    "Pasta",
+    "ItalianCuisine",
+    "VeganFood"
+   ],
+   "description": "Garlic, olive oil, chilli flakes.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo020",
+   "domain": "Food",
+   "name": "Penne arrabbiata",
+   "concepts": [
+    "Pasta",
+    "ItalianCuisine",
+    "SpicyFood",
+    "VeganFood"
+   ],
+   "description": "Penne in a fiery tomato sauce.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo021",
+   "domain": "Food",
+   "name": "Seafood linguine",
+   "concepts": [
+    "Pasta",
+    "ItalianCuisine",
+    "Shrimp",
+    "Mussel"
+   ],
+   "description": "Linguine with prawns and mussels.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo022",
+   "domain": "Food",
+   "name": "Thai green curry with tofu",
+   "concepts": [
+    "ThaiCuisine",
+    "Curry",
+    "SpicyFood",
+    "Tofu",
+    "VeganFood"
+   ],
+   "description": "Coconut green curry, tofu, Thai basil.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo023",
+   "domain": "Food",
+   "name": "Pad thai with prawns",
+   "concepts": [
+    "ThaiCuisine",
+    "Shrimp",
+    "Nuts"
+   ],
+   "description": "Rice noodles, tamarind, peanuts, prawns.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo024",
+   "domain": "Food",
+   "name": "Vegetable momos",
+   "concepts": [
+    "DimSum",
+    "ChineseCuisine",
+    "VegetarianFood"
+   ],
+   "description": "Steamed dumplings with spicy chutney.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo025",
+   "domain": "Food",
+   "name": "Chilli chicken",
+   "concepts": [
+    "ChineseCuisine",
+    "Poultry",
+    "SpicyFood",
+    "FriedFood"
+   ],
+   "description": "Indo-Chinese chilli chicken.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo026",
+   "domain": "Food",
+   "name": "Bibimbap",
+   "concepts": [
+    "KoreanCuisine",
+    "Rice",
+    "Vegetables"
+   ],
+   "description": "Rice bowl with vegetables and egg.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo027",
+   "domain": "Food",
+   "name": "Kimchi fried rice",
+   "concepts": [
+    "KoreanCuisine",
+    "Rice",
+    "SpicyFood"
+   ],
+   "description": "Spicy fermented-cabbage fried rice.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo028",
+   "domain": "Food",
+   "name": "Chicken tacos",
+   "concepts": [
+    "Tacos",
+    "MexicanCuisine",
+    "Poultry",
+    "SpicyFood"
+   ],
+   "description": "Three soft tacos, salsa roja.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo029",
+   "domain": "Food",
+   "name": "Bean burrito bowl",
+   "concepts": [
+    "MexicanCuisine",
+    "VeganFood",
+    "Rice"
+   ],
+   "description": "Black beans, rice, salsa, guacamole.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo030",
+   "domain": "Food",
+   "name": "Falafel wrap",
+   "concepts": [
+    "MediterraneanCuisine",
+    "VeganFood",
+    "Bread"
+   ],
+   "description": "Falafel, hummus, pickles.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo031",
+   "domain": "Food",
+   "name": "Greek salad",
+   "concepts": [
+    "Salad",
+    "MediterraneanCuisine",
+    "Cheese",
+    "Vegetables"
+   ],
+   "description": "Feta, olives, cucumber, tomato.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo032",
+   "domain": "Food",
+   "name": "Quinoa power salad",
+   "concepts": [
+    "Salad",
+    "VeganFood",
+    "Vegetables"
+   ],
+   "description": "Quinoa, chickpeas, greens, lemon dressing.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo033",
+   "domain": "Food",
+   "name": "Classic cheeseburger",
+   "concepts": [
+    "Burger",
+    "FastFood",
+    "RedMeat",
+    "Cheese"
+   ],
+   "description": "Beef patty, cheddar, fries on the side.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo034",
+   "domain": "Food",
+   "name": "Veggie burger",
+   "concepts": [
+    "Burger",
+    "FastFood",
+    "VegetarianFood"
+   ],
+   "description": "Black-bean patty, lettuce, tomato.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo035",
+   "domain": "Food",
+   "name": "Buffalo wings",
+   "concepts": [
+    "ChickenWings",
+    "Poultry",
+    "SpicyFood",
+    "FriedFood"
+   ],
+   "description": "Hot wings with ranch dip.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo036",
+   "domain": "Food",
+   "name": "Pani puri",
+   "concepts": [
+    "StreetFood",
+    "VegetarianFood",
+    "SpicyFood"
+   ],
+   "description": "Crisp puris, spiced water.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo037",
+   "domain": "Food",
+   "name": "Gulab jamun",
+   "concepts": [
+    "IndianSweets",
+    "Dessert",
+    "Dairy"
+   ],
+   "description": "Warm syrup-soaked milk dumplings.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo038",
+   "domain": "Food",
+   "name": "Dark chocolate mousse",
+   "concepts": [
+    "Chocolate",
+    "Dessert",
+    "Dairy"
+   ],
+   "description": "70% dark chocolate mousse.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo039",
+   "domain": "Food",
+   "name": "Mango sorbet",
+   "concepts": [
+    "Mango",
+    "Dessert",
+    "VeganFood"
+   ],
+   "description": "Alphonso mango sorbet.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo040",
+   "domain": "Food",
+   "name": "Filter coffee",
+   "concepts": [
+    "Coffee"
+   ],
+   "description": "South Indian filter coffee.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo041",
+   "domain": "Food",
+   "name": "Masala chai",
+   "concepts": [
+    "Tea"
+   ],
+   "description": "Spiced milk tea.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "fo042",
+   "domain": "Food",
+   "name": "Craft beer flight",
+   "concepts": [
+    "Beer",
+    "Alcohol"
+   ],
+   "description": "Four local craft beers.",
+   "price": "mid",
+   "contexts": [
+    "social"
+   ]
+  },
+  {
+   "id": "fo043",
+   "domain": "Food",
+   "name": "Kids' cheese pasta",
+   "concepts": [
+    "Pasta",
+    "Cheese",
+    "ItalianCuisine"
+   ],
+   "description": "Mild cheesy pasta for children.",
+   "price": "low",
+   "contexts": [
+    "family"
+   ]
+  },
+  {
+   "id": "fo044",
+   "domain": "Food",
+   "name": "Office salad box",
+   "concepts": [
+    "Salad",
+    "Vegetables",
+    "VegetarianFood"
+   ],
+   "description": "Light desk-lunch salad box.",
+   "price": "low",
+   "contexts": [
+    "work"
+   ]
+  },
+  {
+   "id": "tr045",
+   "domain": "Travel",
+   "name": "Paris long weekend",
+   "concepts": [
+    "Paris",
+    "France",
+    "CityBreak",
+    "Museum"
+   ],
+   "description": "Museums, caf\u00e9s and the Seine.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr046",
+   "domain": "Travel",
+   "name": "Rome and the Colosseum",
+   "concepts": [
+    "Rome",
+    "Italy",
+    "CityBreak",
+    "Museum"
+   ],
+   "description": "Ancient Rome on foot.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr047",
+   "domain": "Travel",
+   "name": "Venice canals",
+   "concepts": [
+    "Venice",
+    "Italy",
+    "CityBreak"
+   ],
+   "description": "Gondolas and islands.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr048",
+   "domain": "Travel",
+   "name": "Barcelona city break",
+   "concepts": [
+    "Barcelona",
+    "Spain",
+    "CityBreak",
+    "BeachHoliday"
+   ],
+   "description": "Gaud\u00ed and the beach.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr049",
+   "domain": "Travel",
+   "name": "Swiss Alps rail trip",
+   "concepts": [
+    "Switzerland",
+    "MountainTrip",
+    "Train"
+   ],
+   "description": "Scenic trains through the Alps.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr050",
+   "domain": "Travel",
+   "name": "Tokyo food tour",
+   "concepts": [
+    "Tokyo",
+    "Japan",
+    "CityBreak",
+    "JapaneseCuisine"
+   ],
+   "description": "Ramen, sushi and neon.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr051",
+   "domain": "Travel",
+   "name": "Kyoto temples",
+   "concepts": [
+    "Kyoto",
+    "Japan",
+    "PilgrimageTravel"
+   ],
+   "description": "Temples, gardens and tea houses.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr052",
+   "domain": "Travel",
+   "name": "Phuket beaches",
+   "concepts": [
+    "Phuket",
+    "Thailand",
+    "BeachHoliday",
+    "Nightlife"
+   ],
+   "description": "Islands and nightlife.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr053",
+   "domain": "Travel",
+   "name": "Bangkok street food trip",
+   "concepts": [
+    "Bangkok",
+    "Thailand",
+    "CityBreak",
+    "StreetFood"
+   ],
+   "description": "Night markets and temples.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr054",
+   "domain": "Travel",
+   "name": "Goa beach week",
+   "concepts": [
+    "Goa",
+    "BeachHoliday",
+    "Nightlife",
+    "Seafood"
+   ],
+   "description": "Beaches, shacks and seafood.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr055",
+   "domain": "Travel",
+   "name": "Kerala backwaters houseboat",
+   "concepts": [
+    "Kerala",
+    "Homestay"
+   ],
+   "description": "Slow days on the backwaters.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr056",
+   "domain": "Travel",
+   "name": "Rajasthan heritage tour",
+   "concepts": [
+    "Rajasthan",
+    "LuxuryHotel",
+    "Museum"
+   ],
+   "description": "Forts, palaces, desert camps.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr057",
+   "domain": "Travel",
+   "name": "Ladakh road trip",
+   "concepts": [
+    "Ladakh",
+    "RoadTrip",
+    "MountainTrip",
+    "AdventureTravel"
+   ],
+   "description": "High passes and monasteries.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr058",
+   "domain": "Travel",
+   "name": "Himachal trekking",
+   "concepts": [
+    "Himachal",
+    "Trekking",
+    "MountainTrip",
+    "Camping"
+   ],
+   "description": "Treks around Manali.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr059",
+   "domain": "Travel",
+   "name": "Bali resort stay",
+   "concepts": [
+    "Bali",
+    "LuxuryHotel",
+    "BeachHoliday"
+   ],
+   "description": "Villas and rice terraces.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr060",
+   "domain": "Travel",
+   "name": "Singapore family trip",
+   "concepts": [
+    "Singapore",
+    "CityBreak"
+   ],
+   "description": "Gardens and theme parks.",
+   "price": "high",
+   "contexts": [
+    "family"
+   ]
+  },
+  {
+   "id": "tr061",
+   "domain": "Travel",
+   "name": "Dubai stopover",
+   "concepts": [
+    "Dubai",
+    "CityBreak",
+    "LuxuryTravel"
+   ],
+   "description": "Desert safari and malls.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr062",
+   "domain": "Travel",
+   "name": "New York city break",
+   "concepts": [
+    "NewYork",
+    "CityBreak",
+    "Museum"
+   ],
+   "description": "Broadway, museums, bagels.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr063",
+   "domain": "Travel",
+   "name": "Machu Picchu trek",
+   "concepts": [
+    "Peru",
+    "Trekking",
+    "AdventureTravel"
+   ],
+   "description": "The Inca Trail.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr064",
+   "domain": "Travel",
+   "name": "Mediterranean cruise",
+   "concepts": [
+    "Cruise",
+    "Europe"
+   ],
+   "description": "Seven nights, five ports.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "tr065",
+   "domain": "Travel",
+   "name": "Backpacking hostels in Europe",
+   "concepts": [
+    "Europe",
+    "Hostel",
+    "BudgetTravel"
+   ],
+   "description": "Rail pass and hostels.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc066",
+   "domain": "Screen",
+   "name": "Late-night slasher double bill",
+   "concepts": [
+    "HorrorMovie"
+   ],
+   "description": "Two cult slashers back to back.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc067",
+   "domain": "Screen",
+   "name": "Psychological thriller pick",
+   "concepts": [
+    "ThrillerMovie"
+   ],
+   "description": "A twisty mind-game thriller.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc068",
+   "domain": "Screen",
+   "name": "Feel-good romcom",
+   "concepts": [
+    "ComedyMovie",
+    "RomanceMovie"
+   ],
+   "description": "Light and warm.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc069",
+   "domain": "Screen",
+   "name": "Space-opera epic",
+   "concepts": [
+    "SciFiMovie",
+    "ActionMovie"
+   ],
+   "description": "Big-screen science fiction.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc070",
+   "domain": "Screen",
+   "name": "Animated family adventure",
+   "concepts": [
+    "AnimatedMovie"
+   ],
+   "description": "Fun for all ages.",
+   "price": "mid",
+   "contexts": [
+    "family"
+   ]
+  },
+  {
+   "id": "sc071",
+   "domain": "Screen",
+   "name": "Nature documentary series",
+   "concepts": [
+    "DocumentaryFilm"
+   ],
+   "description": "Wildlife in high definition.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc072",
+   "domain": "Screen",
+   "name": "Bollywood musical drama",
+   "concepts": [
+    "BollywoodMovie",
+    "MusicalFilm",
+    "DramaMovie"
+   ],
+   "description": "Songs, family and drama.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc073",
+   "domain": "Screen",
+   "name": "Kannada crime drama",
+   "concepts": [
+    "KannadaMovie",
+    "CrimeSeries"
+   ],
+   "description": "Gritty crime story.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc074",
+   "domain": "Screen",
+   "name": "True-crime docuseries",
+   "concepts": [
+    "CrimeSeries",
+    "DocumentaryFilm"
+   ],
+   "description": "Investigative true crime.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc075",
+   "domain": "Screen",
+   "name": "Office sitcom marathon",
+   "concepts": [
+    "Sitcom"
+   ],
+   "description": "Comfort-watch comedy.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc076",
+   "domain": "Screen",
+   "name": "K-drama romance",
+   "concepts": [
+    "KDrama",
+    "RomanceMovie"
+   ],
+   "description": "Sixteen episodes of slow-burn romance.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc077",
+   "domain": "Screen",
+   "name": "Superhero blockbuster",
+   "concepts": [
+    "SuperheroMovie",
+    "ActionMovie"
+   ],
+   "description": "Capes and explosions.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sc078",
+   "domain": "Screen",
+   "name": "IPL match night",
+   "concepts": [
+    "Cricket"
+   ],
+   "description": "Live cricket with friends.",
+   "price": "mid",
+   "contexts": [
+    "social"
+   ]
+  },
+  {
+   "id": "mu079",
+   "domain": "Music",
+   "name": "Classic rock road-trip playlist",
+   "concepts": [
+    "Genre_Rock"
+   ],
+   "description": "Guitar anthems.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "mu080",
+   "domain": "Music",
+   "name": "Lo-fi focus playlist",
+   "concepts": [
+    "Genre_LoFi"
+   ],
+   "description": "Beats to work to.",
+   "price": "low",
+   "contexts": [
+    "work"
+   ]
+  },
+  {
+   "id": "mu081",
+   "domain": "Music",
+   "name": "Carnatic morning ragas",
+   "concepts": [
+    "IndianClassical"
+   ],
+   "description": "Calm morning ragas.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "mu082",
+   "domain": "Music",
+   "name": "Jazz club evening",
+   "concepts": [
+    "Genre_Jazz",
+    "LiveMusic"
+   ],
+   "description": "Live trio in a small club.",
+   "price": "mid",
+   "contexts": [
+    "social"
+   ]
+  },
+  {
+   "id": "mu083",
+   "domain": "Music",
+   "name": "EDM festival weekend",
+   "concepts": [
+    "Genre_Electronic",
+    "LiveMusic"
+   ],
+   "description": "Two days of DJs.",
+   "price": "high",
+   "contexts": [
+    "social"
+   ]
+  },
+  {
+   "id": "mu084",
+   "domain": "Music",
+   "name": "Bollywood party mix",
+   "concepts": [
+    "Genre_Bollywood"
+   ],
+   "description": "Dance-floor hits.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "mu085",
+   "domain": "Music",
+   "name": "Heavy metal essentials",
+   "concepts": [
+    "Metal"
+   ],
+   "description": "Riffs and blast beats.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo086",
+   "domain": "Books",
+   "name": "Epic fantasy trilogy",
+   "concepts": [
+    "Fantasy_Book"
+   ],
+   "description": "Dragons, maps, prophecies.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo087",
+   "domain": "Books",
+   "name": "Hard sci-fi novel",
+   "concepts": [
+    "SciFi_Book"
+   ],
+   "description": "Physics-first science fiction.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo088",
+   "domain": "Books",
+   "name": "Locked-room mystery",
+   "concepts": [
+    "Mystery_Book"
+   ],
+   "description": "A classic whodunit.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo089",
+   "domain": "Books",
+   "name": "Startup memoir",
+   "concepts": [
+    "Biography",
+    "Business_Book"
+   ],
+   "description": "A founder's story.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo090",
+   "domain": "Books",
+   "name": "Popular history of India",
+   "concepts": [
+    "History_Book"
+   ],
+   "description": "Narrative history.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo091",
+   "domain": "Books",
+   "name": "Manga box set",
+   "concepts": [
+    "Comics"
+   ],
+   "description": "Complete series.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "bo092",
+   "domain": "Books",
+   "name": "Productivity self-help",
+   "concepts": [
+    "SelfHelp"
+   ],
+   "description": "Habits and routines.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh093",
+   "domain": "Shopping",
+   "name": "Flagship iPhone",
+   "concepts": [
+    "Iphone",
+    "Smartphone"
+   ],
+   "description": "Latest iPhone.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh094",
+   "domain": "Shopping",
+   "name": "Mid-range Android phone",
+   "concepts": [
+    "AndroidPhone",
+    "Smartphone"
+   ],
+   "description": "Great value Android.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh095",
+   "domain": "Shopping",
+   "name": "Noise-cancelling headphones",
+   "concepts": [
+    "Headphones"
+   ],
+   "description": "Over-ear ANC headphones.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh096",
+   "domain": "Shopping",
+   "name": "Fitness smartwatch",
+   "concepts": [
+    "SmartWatch"
+   ],
+   "description": "Heart rate and GPS.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh097",
+   "domain": "Shopping",
+   "name": "Refurbished laptop",
+   "concepts": [
+    "Laptop",
+    "SecondHand"
+   ],
+   "description": "Certified refurbished.",
+   "price": "low",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh098",
+   "domain": "Shopping",
+   "name": "Designer handbag",
+   "concepts": [
+    "LuxuryBrands"
+   ],
+   "description": "Luxury label.",
+   "price": "high",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh099",
+   "domain": "Shopping",
+   "name": "Organic cotton tees",
+   "concepts": [
+    "Casualwear",
+    "SustainableProducts"
+   ],
+   "description": "Sustainably made basics.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh100",
+   "domain": "Shopping",
+   "name": "Running shoes",
+   "concepts": [
+    "Sneakers",
+    "Sportswear"
+   ],
+   "description": "Cushioned road runners.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  },
+  {
+   "id": "sh101",
+   "domain": "Shopping",
+   "name": "Handloom saree",
+   "concepts": [
+    "EthnicWear",
+    "SustainableProducts"
+   ],
+   "description": "Handwoven cotton saree.",
+   "price": "mid",
+   "contexts": [
+    "any"
+   ]
+  }
+ ]
+}

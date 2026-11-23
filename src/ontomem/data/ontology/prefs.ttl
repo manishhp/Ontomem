@@ -1,0 +1,76 @@
+@prefix pref: <https://w3id.org/ontomem/pref#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+
+# ---------------------------------------------------------------------------
+# OntoMem preference vocabulary.
+# A preference is REIFIED: instead of a bare triple  user --likes--> Sushi
+# it is its own node carrying the value (polarity, strength) and the metadata
+# needed for conflict resolution (slot key fields, dates, provenance, status).
+# ---------------------------------------------------------------------------
+
+<https://w3id.org/ontomem/pref> a owl:Ontology ;
+    dct:title "OntoMem preference vocabulary"@en ;
+    owl:versionInfo "1.0.0" ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/ns/prov-o> .
+
+pref:Person a owl:Class ; rdfs:subClassOf prov:Agent ;
+    rdfs:comment "A user account that owns a memory graph."@en .
+
+pref:Preference a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:comment "A reified preference statement: one value of one slot."@en .
+
+pref:Extraction a owl:Class ; rdfs:subClassOf prov:Activity ;
+    rdfs:comment "The act of extracting a preference from a user turn."@en .
+
+# --- slot key (who . what . aspect . intent . context) ----------------------
+pref:holder        a owl:ObjectProperty ; rdfs:domain pref:Preference ; rdfs:range pref:Person ;
+    rdfs:comment "The account whose memory this is."@en .
+pref:subjectRole   a owl:DatatypeProperty ; rdfs:domain pref:Preference ;
+    rdfs:comment "WHO the preference is about, relative to the holder: self, partner, child, ..."@en .
+pref:concept       a owl:ObjectProperty ; rdfs:domain pref:Preference ; rdfs:range skos:Concept ;
+    rdfs:comment "WHAT: the SKOS concept the preference is about."@en .
+pref:unmappedLabel a owl:DatatypeProperty ; rdfs:domain pref:Preference ;
+    rdfs:comment "Normalised surface phrase when no concept matched (coverage gap)."@en .
+pref:aspect        a owl:DatatypeProperty ; rdfs:domain pref:Preference .
+pref:intent        a owl:DatatypeProperty ; rdfs:domain pref:Preference .
+pref:context       a owl:DatatypeProperty ; rdfs:domain pref:Preference .
+pref:slotKey       a owl:DatatypeProperty ; rdfs:domain pref:Preference ;
+    rdfs:comment "Serialised 5-part key; two active preferences may never share one."@en .
+
+# --- value ------------------------------------------------------------------
+pref:polarity      a owl:DatatypeProperty ; rdfs:domain pref:Preference .
+pref:strength      a owl:DatatypeProperty ; rdfs:domain pref:Preference ; rdfs:range xsd:decimal .
+pref:reason        a owl:DatatypeProperty ; rdfs:domain pref:Preference .
+
+# --- time (bitemporal-lite) -------------------------------------------------
+pref:statedAt      a owl:DatatypeProperty ; rdfs:range xsd:dateTime ;
+    rdfs:comment "Transaction time: when the user said it."@en .
+pref:validFrom     a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+pref:validTo       a owl:DatatypeProperty ; rdfs:range xsd:dateTime ;
+    rdfs:comment "Set when the preference is retired."@en .
+pref:lastConfirmed a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+
+# --- lifecycle and relations between preferences -----------------------------
+pref:status        a owl:DatatypeProperty ; rdfs:comment "active | retired"@en .
+pref:supersededBy  a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain pref:Preference ; rdfs:range pref:Preference ; owl:inverseOf pref:supersedes .
+pref:supersedes    a owl:ObjectProperty .
+pref:exceptionTo   a owl:ObjectProperty ; rdfs:domain pref:Preference ; rdfs:range pref:Preference ;
+    rdfs:comment "Narrower preference with opposite polarity to an active broader one (rule R2)."@en .
+pref:refines       a owl:ObjectProperty ; rdfs:domain pref:Preference ; rdfs:range pref:Preference ;
+    rdfs:comment "Narrower preference with the same polarity as a broader one."@en .
+pref:needsConfirmation a owl:DatatypeProperty ; rdfs:range xsd:boolean ;
+    rdfs:comment "Set by rule R3 when a later, broader statement contradicts this one."@en .
+pref:createdByRule a owl:DatatypeProperty .
+
+# --- provenance --------------------------------------------------------------
+pref:sourceText    a owl:DatatypeProperty ; rdfs:subPropertyOf prov:value .
+pref:surface       a owl:DatatypeProperty .
+pref:evidence      a owl:DatatypeProperty ; rdfs:comment "Turn ids supporting this value."@en .
+pref:extractedBy   a owl:DatatypeProperty .
+pref:ontologyVersion a owl:DatatypeProperty .

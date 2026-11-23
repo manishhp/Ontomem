@@ -1,0 +1,266 @@
+# OntoMem concept hierarchy (source for src/ontomem/data/ontology/concepts.ttl)
+#
+# Format:  LocalName: preferred label | alt label, alt label, ...
+# Indentation (2 spaces) = skos:narrower.  A concept may appear under a second
+# parent with the line  "  ^LocalName"  (polyhierarchy, e.g. Sushi is Japanese AND Seafood).
+# Lines starting with "@related A B" add skos:related links (used for query expansion).
+# Labels are matched case-insensitively after plural normalisation, so list singular forms.
+
+Food: food | cuisine, cooking, eating, meal, dish
+  SpicyFood: spicy food | spicy dish, spicy, spicy cuisine, hot food, fiery food, chilli, chili, chilli food, hot and spicy food, anything spicy
+  SweetFood: sweet food | sweets, sweet stuff, sugary food, sweet thing
+    Dessert: dessert | pudding, after-dinner sweet
+      IceCream: ice cream | gelato
+      Chocolate: chocolate | dark chocolate, milk chocolate
+      Cake: cake | cheesecake, pastry, pastries
+      IndianSweets: indian sweets | mithai, gulab jamun, rasgulla, jalebi
+  Seafood: seafood | sea food, fruits de mer
+    Fish: fish | fish dish
+      Salmon: salmon | smoked salmon
+      Tuna: tuna | tuna steak
+      Sardine: sardines | sardine
+    Shellfish: shellfish | shell fish
+      Shrimp: shrimp | prawn, prawns, prawn curry, shrimp curry, shrimps
+      Crab: crab | crab meat
+      Lobster: lobster | lobster tail
+      Oyster: oysters | oyster
+      Mussel: mussels | mussel, clam, clams
+    Sushi: sushi | sashimi, nigiri, maki, sushi roll
+  Meat: meat | meat dish
+    RedMeat: red meat | beef, steak, lamb, mutton, pork
+    Poultry: poultry | chicken, turkey, duck
+      ChickenWings: chicken wings | wings, buffalo wings
+  VegetarianFood: vegetarian food | vegetarian dish, veggie food, veg food, vegetarian
+    VeganFood: vegan food | plant-based food, vegan dish, plant based food, vegan
+    Paneer: paneer | cottage cheese, paneer tikka
+    Tofu: tofu | bean curd
+  Dairy: dairy | dairy product, milk products
+    Cheese: cheese | cheddar, mozzarella, parmesan, blue cheese
+    Milk: milk | cow milk
+    ^IceCream
+  Vegetables: vegetables | veggies, greens, vegetable
+    Mushroom: mushrooms | mushroom, button mushroom, shiitake
+    Broccoli: broccoli | broccolini
+    Eggplant: eggplant | brinjal, aubergine
+    Okra: okra | bhindi, lady finger
+  Fruit: fruit | fruits
+    Mango: mango | mangoes, alphonso
+    Durian: durian | durian fruit
+  Grains: grains | carbs, carbohydrate
+    Rice: rice | biryani, fried rice, rice dish
+    Bread: bread | sourdough, naan, roti, chapati
+    Pasta: pasta | spaghetti, penne, noodles, lasagna
+  Nuts: nuts | nut, peanut, peanuts, almonds, cashews, tree nuts
+  Gluten: gluten | wheat, gluten food
+  FastFood: fast food | junk food, takeaway, takeout
+    Pizza: pizza | pizzas, margherita
+    Burger: burgers | burger, cheeseburger, hamburger
+    FrenchFries: fries | french fries, chips
+  FriedFood: fried food | deep fried food, deep-fried food, greasy food, oily food
+    ^ChickenWings
+    ^FrenchFries
+    ^Tempura
+  Salad: salads | salad, salad bowl, green salad, caesar salad
+  StreetFood: street food | chaat, pani puri, vada pav, street snacks
+  Cuisine: world cuisine | international cuisine, cuisine type
+    IndianCuisine: indian food | indian cuisine, indian dish, desi food
+      SouthIndianCuisine: south indian food | south indian cuisine, dosa, idli, sambar
+      NorthIndianCuisine: north indian food | north indian cuisine, butter chicken, dal makhani
+      Curry: curry | curries, curry dish
+    ItalianCuisine: italian food | italian cuisine, italian dish
+      ^Pasta
+      ^Pizza
+    JapaneseCuisine: japanese food | japanese cuisine, japanese dish
+      ^Sushi
+      Ramen: ramen | ramen noodles
+      Tempura: tempura | tempura dish
+    ChineseCuisine: chinese food | chinese cuisine, indo-chinese food, chinese dish
+      DimSum: dim sum | dumplings, momos
+    MexicanCuisine: mexican food | mexican cuisine, tex-mex
+      Tacos: tacos | taco, burrito, burritos
+    ThaiCuisine: thai food | thai cuisine, thai curry, pad thai
+    MediterraneanCuisine: mediterranean food | mediterranean cuisine, greek food, hummus, falafel
+    KoreanCuisine: korean food | korean cuisine, kimchi, korean bbq
+  Beverage: drinks | drink, beverage, beverages
+    Coffee: coffee | espresso, latte, cappuccino, filter coffee
+    Tea: tea | chai, green tea, masala chai
+    Alcohol: alcohol | alcoholic drinks, booze, liquor
+      Beer: beer | craft beer, lager, ale
+      Wine: wine | red wine, white wine
+      Cocktail: cocktails | cocktail, mojito
+    SoftDrink: soft drinks | soda, cola, fizzy drinks, coke
+    Juice: juice | fresh juice, smoothie, smoothies
+
+Travel: travel | travelling, traveling, trips, trip, holidays, holiday, vacation, vacations
+  Destination: destinations | destination, place to visit
+    Europe: europe | european destinations, european trip
+      France: france | french trip
+        Paris: paris | the eiffel tower
+      Italy: italy | italian trip
+        Rome: rome | the colosseum
+        Venice: venice | venetian canals
+      Spain: spain | spanish trip
+        Barcelona: barcelona | sagrada familia
+      UK: the uk | united kingdom, england, britain
+        London: london | the london eye
+      Switzerland: switzerland | swiss alps
+    Asia: asia | asian destinations, asian trip
+      Japan: japan | japan trip
+        Tokyo: tokyo | tokyo trip
+        Kyoto: kyoto | kyoto temples
+      Thailand: thailand | thai islands
+        Bangkok: bangkok | bangkok trip
+        Phuket: phuket | phuket beaches
+      IndiaDestinations: india | indian destinations, travelling in india
+        Goa: goa | goan beaches
+        Kerala: kerala | kerala backwaters, munnar
+        Rajasthan: rajasthan | jaipur, udaipur, jaisalmer
+        Ladakh: ladakh | leh
+        Himachal: himachal | manali, shimla, himachal pradesh
+      Bali: bali | bali trip
+      Singapore: singapore | marina bay
+      Dubai: dubai | the burj khalifa
+    Americas: the americas | america trip
+      USA: the usa | the us, united states, america
+        NewYork: new york | nyc, new york city, manhattan
+      Peru: peru | machu picchu
+  TravelStyle: travel style | way of travelling
+    BeachHoliday: beach holidays | beach vacation, beaches, beach, seaside, beach trip, beach destinations
+    MountainTrip: mountain trips | mountains, hill station, hill stations, mountain holidays, the mountains
+    CityBreak: city breaks | city trips, city break, big cities, city holidays
+    Trekking: trekking | hiking, treks, trek, hikes, backpacking
+    RoadTrip: road trips | road trip, long drives, driving holidays
+    Cruise: cruises | cruise, cruise holidays
+    AdventureTravel: adventure travel | adventure trips, adventure sports, adventure holidays, scuba diving, paragliding, bungee jumping
+    LuxuryTravel: luxury travel | luxury trips, five-star travel, luxury holidays
+    BudgetTravel: budget travel | budget trips, cheap trips, travelling on a budget
+    PilgrimageTravel: pilgrimages | pilgrimage, temple trips, religious trips
+  Accommodation: accommodation | places to stay, stays, lodging
+    Hotel: hotels | hotel
+      LuxuryHotel: luxury hotels | five-star hotels, 5-star hotels, resorts, resort
+      BudgetHotel: budget hotels | cheap hotels, motels
+    Hostel: hostels | hostel, dorms
+    Homestay: homestays | homestay, airbnb, airbnbs, guesthouse, guesthouses, villa rentals
+    Camping: camping | tents, campsites, glamping
+  TransportMode: transport | getting around
+    Flight: flights | flying, air travel, planes, airlines
+      RedEyeFlight: red-eye flights | red eye flights, overnight flights, late night flights
+      LayoverFlight: layovers | connecting flights, long layovers
+    Train: trains | train journeys, rail travel, train travel, sleeper trains
+    Bus: buses | bus journeys, bus travel, overnight buses
+  TravelCrowd: crowds | crowded places, touristy places, tourist traps, packed places
+  Museum: museums | museum, art galleries, galleries
+  Nightlife: nightlife | clubs, clubbing, bars, partying, pubs
+  Shopping_Travel: shopping on trips | souvenir shopping, local markets, street markets
+
+Screen: movies and tv | tv, television, screen, entertainment
+  Movie: movies | movie, film, films, cinema
+    ActionMovie: action movies | action films, action flicks, action
+    ComedyMovie: comedies | comedy, comedy movies, comedy films, funny movies, rom-coms, romcoms
+    HorrorMovie: horror movies | horror, horror films, scary movies, slasher films
+    ThrillerMovie: thrillers | thriller, thriller movies, suspense films, psychological thrillers, crime thrillers
+    DramaMovie: dramas | drama, drama films, drama movies
+    SciFiMovie: sci-fi | science fiction, sci-fi movies, sci fi, space movies
+    AnimatedMovie: animated movies | animation, cartoons, animated films, pixar films, anime films
+    DocumentaryFilm: documentaries | documentary, docs, docuseries
+    RomanceMovie: romantic movies | romance, romance films, love stories
+    BollywoodMovie: bollywood movies | bollywood, hindi movies, hindi films
+    KannadaMovie: kannada movies | kannada films, sandalwood movies
+    TamilMovie: tamil movies | tamil films, kollywood
+    MusicalFilm: musicals | musical, musical films
+    FantasyMovie: fantasy movies | fantasy, fantasy films
+    SuperheroMovie: superhero movies | superhero films, marvel movies, superheroes
+  TVShow: tv shows | tv series, series, web series, shows, streaming shows
+    Sitcom: sitcoms | sitcom
+    RealityTV: reality tv | reality shows, reality television
+    CrimeSeries: crime shows | crime series, true crime, detective shows
+    Anime: anime | anime series, japanese animation
+    KDrama: k-dramas | kdramas, korean dramas, korean shows
+  Sports_Viewing: watching sports | sports on tv, live sports
+    Cricket: cricket | ipl, test cricket, cricket matches
+    Football: football | soccer, premier league
+    Formula1: formula 1 | f1, motor racing
+
+Music: music | songs, tunes
+  Genre_Rock: rock | rock music, classic rock, hard rock
+    Metal: metal | heavy metal, metal music
+    IndieRock: indie rock | indie, indie music, alt rock
+  Genre_Pop: pop | pop music, pop songs, k-pop, kpop
+  Genre_HipHop: hip hop | hip-hop, rap, rap music
+  Genre_Electronic: electronic music | edm, techno, house music, electronic
+  Genre_Jazz: jazz | jazz music, smooth jazz
+  Genre_Classical: classical music | western classical, orchestral music, symphonies
+    IndianClassical: indian classical music | carnatic music, hindustani music, carnatic, hindustani, ragas
+  Genre_Bollywood: bollywood songs | bollywood music, filmi songs, hindi songs
+  Genre_Folk: folk music | folk, folk songs
+  Genre_Country: country music | country
+  Genre_LoFi: lo-fi | lofi, lo-fi beats, chill beats
+  Genre_Devotional: devotional music | bhajans, devotional songs, kirtan
+  LiveMusic: live music | concerts, gigs, music festivals, live shows
+  Podcast: podcasts | podcast
+
+Books: books | reading, reads
+  Fiction: fiction | novels, fiction books
+    Fantasy_Book: fantasy novels | fantasy books, high fantasy, epic fantasy
+    SciFi_Book: science fiction novels | sci-fi books, sci-fi novels
+    Mystery_Book: mystery novels | mysteries, crime novels, detective novels, whodunits
+    Romance_Book: romance novels | romance books
+    Horror_Book: horror novels | horror books, horror fiction
+    LiteraryFiction: literary fiction | literary novels, classics, classic novels
+    Thriller_Book: thriller novels | thriller books, page-turners
+  NonFiction: non-fiction | nonfiction, non fiction, non-fiction books
+    Biography: biographies | biography, memoirs, autobiographies
+    SelfHelp: self-help books | self help, self-help, productivity books
+    History_Book: history books | history, popular history
+    Science_Book: popular science | science books, pop science
+    Business_Book: business books | management books, startup books
+  Comics: comics | graphic novels, manga, comic books
+  Poetry: poetry | poems, poetry books
+  Audiobook: audiobooks | audiobook, audible
+  EBook: e-books | ebooks, kindle, kindle books
+
+Shopping: shopping | products, stuff to buy, purchases
+  Electronics: electronics | gadgets, tech, devices
+    Smartphone: smartphones | phones, mobile phones, smartphone, phone
+      Iphone: iphones | iphone, apple phones
+      AndroidPhone: android phones | android, android phone, pixel phones, samsung phones
+    Laptop: laptops | laptop, notebooks, macbook, macbooks
+    Headphones: headphones | earphones, earbuds, airpods, headsets
+    SmartWatch: smartwatches | smart watch, smartwatch, fitness bands, fitness trackers
+    Camera: cameras | camera, dslr, mirrorless cameras
+    GamingConsole: gaming consoles | playstation, xbox, nintendo switch, consoles
+  Clothing: clothing | clothes, fashion, outfits, apparel
+    Formalwear: formal wear | formals, suits, blazers
+    Casualwear: casual wear | casuals, t-shirts, jeans, hoodies
+    EthnicWear: ethnic wear | kurtas, sarees, saree, kurta, traditional wear
+    Sportswear: sportswear | activewear, gym wear, athleisure
+    FastFashion: fast fashion | cheap fashion, zara, h&m
+  Footwear: footwear | shoes
+    Sneakers: sneakers | trainers, running shoes, sports shoes
+    Heels: heels | high heels, stilettos
+    Sandals: sandals | flip-flops, chappals, slippers
+  Brand_Style: shopping style | how i shop
+    LuxuryBrands: luxury brands | designer brands, designer labels, luxury goods
+    SustainableProducts: sustainable products | eco-friendly products, sustainable brands, eco friendly products, ethical brands
+    SecondHand: second-hand items | thrift, thrifting, pre-owned items, used items, refurbished items
+  OnlineShopping: online shopping | shopping online, e-commerce, amazon, flipkart
+  Furniture: furniture | home furniture, sofas, decor, home decor
+  Books_Shopping: book shopping | buying books, bookstores
+  Cosmetics: cosmetics | makeup, skincare, beauty products
+
+@related SpicyFood Curry
+@related SpicyFood ThaiCuisine
+@related Seafood Goa
+@related Sushi Japan
+@related ItalianCuisine Italy
+@related BeachHoliday Goa
+@related BeachHoliday Phuket
+@related MountainTrip Himachal
+@related MountainTrip Ladakh
+@related Trekking MountainTrip
+@related Paris Museum
+@related ThrillerMovie Thriller_Book
+@related HorrorMovie Horror_Book
+@related SciFiMovie SciFi_Book
+@related Anime Comics
+@related LiveMusic Nightlife

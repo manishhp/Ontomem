@@ -1,0 +1,2587 @@
+{
+  "review": {
+    "reviewed": 81,
+    "accepted_from_top3": 49,
+    "manual": 32,
+    "skipped": 0,
+    "top1_correct": 32
+  },
+  "results": {
+    "before (v1.0.0)": {
+      "concepts": 229,
+      "test_statements_mapped": 0.8895,
+      "missed_merge_rate_p": 0.0193,
+      "false_merge_rate_q": 0.0013,
+      "valid_erasures": 4,
+      "stale_exposure": 0.0126,
+      "clean_retrieval": 0.9847,
+      "ndcg5": 0.9924,
+      "harmful5": 0.0053,
+      "coverage_case": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "paraphrase_surfaces": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.35,
+        "missed_reinforce_rate": 0.4,
+        "false_merge_rate_q": 0.0153,
+        "valid_erasures": 2,
+        "valid_erasure_rate": 0.0153,
+        "rejected": 0
+      }
+    },
+    "after evolution (v1.1.0)": {
+      "concepts": 251,
+      "test_statements_mapped": 0.9983,
+      "missed_merge_rate_p": 0.0039,
+      "false_merge_rate_q": 0.0007,
+      "valid_erasures": 2,
+      "stale_exposure": 0.0053,
+      "clean_retrieval": 0.9934,
+      "ndcg5": 0.9985,
+      "harmful5": 0.0033,
+      "coverage_case": {
+        "writes": 361,
+        "revisions": 130,
+        "missed_merge_rate_p": 0.0,
+        "missed_reinforce_rate": 0.0,
+        "false_merge_rate_q": 0.0,
+        "valid_erasures": 0,
+        "valid_erasure_rate": 0.0,
+        "rejected": 0
+      },
+      "paraphrase_surfaces": {
+        "writes": 131,
+        "revisions": 20,
+        "missed_merge_rate_p": 0.1,
+        "missed_reinforce_rate": 0.1,
+        "false_merge_rate_q": 0.0076,
+        "valid_erasures": 1,
+        "valid_erasure_rate": 0.0076,
+        "rejected": 0
+      }
+    }
+  },
+  "review_log": [
+    {
+      "phrase": "vietnam",
+      "count": 27,
+      "why": "unmapped",
+      "gold": "Vietnam",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "IndiaDestinations",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Asia",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "NewYork",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "vietnamese food",
+      "count": 22,
+      "why": "unmapped",
+      "gold": "VietnameseCuisine",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "JapaneseCuisine",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Meat",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Food",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "jackfruit",
+      "count": 21,
+      "why": "unmapped",
+      "gold": "Jackfruit",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Nuts",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "hampi",
+      "count": 20,
+      "why": "unmapped",
+      "gold": "Hampi",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "IndiaDestinations",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Italy",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Europe",
+          "score": 0.28,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "meghalaya",
+      "count": 19,
+      "why": "unmapped",
+      "gold": "Meghalaya",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Flight",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Kyoto",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Japan",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "kombucha",
+      "count": 19,
+      "why": "unmapped",
+      "gold": "Kombucha",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Vegetables",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "vinyl records",
+      "count": 17,
+      "why": "unmapped",
+      "gold": "Vinyl",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Clothing",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Camera",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Electronics",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "bubble tea",
+      "count": 17,
+      "why": "partial match on 'tea' (unexplained: bubble)",
+      "gold": "BubbleTea",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Tea",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Beverage",
+          "score": 0.45,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Tea",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "stand-up comedy specials",
+      "count": 17,
+      "why": "partial match on 'comedy' (unexplained: stand up special)",
+      "gold": "StandUp",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "ComedyMovie",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TVShow",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "ComedyMovie",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "matcha",
+      "count": 16,
+      "why": "unmapped",
+      "gold": "Matcha",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Beverage",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "quinoa",
+      "count": 16,
+      "why": "unmapped",
+      "gold": "Quinoa",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Poultry",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Coffee",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Beverage",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "afrobeats",
+      "count": 15,
+      "why": "unmapped",
+      "gold": "Afrobeats",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Genre_Rock",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndieRock",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "iceland",
+      "count": 14,
+      "why": "unmapped",
+      "gold": "Iceland",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "IndiaDestinations",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Himachal",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Kyoto",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "mechanical keyboards",
+      "count": 14,
+      "why": "unmapped",
+      "gold": "MechanicalKeyboard",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Electronics",
+          "score": 0.45,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "FastFashion",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Clothing",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "westerns",
+      "count": 14,
+      "why": "unmapped",
+      "gold": "Western",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Screen",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "AnimatedMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Genre_Classical",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "wildlife safaris",
+      "count": 13,
+      "why": "unmapped",
+      "gold": "Safari",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "TravelStyle",
+          "score": 0.45,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Flight",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Tokyo",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "qawwali",
+      "count": 12,
+      "why": "unmapped",
+      "gold": "Qawwali",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndianClassical",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Genre_Classical",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "spicy thrillers",
+      "count": 12,
+      "why": "partial match on 'thriller' (unexplained: spicy)",
+      "gold": "ThrillerMovie",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "ThrillerMovie",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.48,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "KDrama",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "ThrillerMovie",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "SpicyFood",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "synthwave",
+      "count": 12,
+      "why": "unmapped",
+      "gold": "Synthwave",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Genre_Rock",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Metal",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "perfume",
+      "count": 11,
+      "why": "unmapped",
+      "gold": "Perfume",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Clothing",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Footwear",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Shopping",
+          "score": 0.28,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "tiramisu",
+      "count": 10,
+      "why": "unmapped",
+      "gold": "Tiramisu",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Dessert",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "cosy mysteries",
+      "count": 8,
+      "why": "partial match on 'mystery' (unexplained: cosy)",
+      "gold": "CosyMystery",
+      "decision": "auto-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Mystery_Book",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "SelfHelp",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "NonFiction",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Mystery_Book",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "non-veg food",
+      "count": 7,
+      "why": "partial match on 'veg food' (unexplained: non)",
+      "gold": "Meat",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "VegetarianFood",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.6,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Food",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "VegetarianFood",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "phrase": "death metal",
+      "count": 6,
+      "why": "partial match on 'metal' (unexplained: death)",
+      "gold": "Metal",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Metal",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Genre_Rock",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Metal",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "avocado toast",
+      "count": 6,
+      "why": "unmapped",
+      "gold": "Avocado",
+      "decision": "manual-new",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Dessert",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Vegetables",
+          "score": 0.28,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "scary films",
+      "count": 6,
+      "why": "unmapped",
+      "gold": "HorrorMovie",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.56,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "HorrorMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "BollywoodMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Movie",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "the colosseum",
+      "count": 5,
+      "why": "unmapped",
+      "gold": "Rome",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Rajasthan",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndiaDestinations",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Rome",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Rome",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "paris in spring",
+      "count": 5,
+      "why": "partial match on 'paris' (unexplained: in spring)",
+      "gold": "Paris",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Paris",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Hotel",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Rome",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Paris",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "sea creatures",
+      "count": 5,
+      "why": "unmapped",
+      "gold": "Seafood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Vegetables",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "funny films",
+      "count": 5,
+      "why": "unmapped",
+      "gold": "ComedyMovie",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TVShow",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Anime",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Movie",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "salmon rolls",
+      "count": 5,
+      "why": "partial match on 'salmon' (unexplained: roll)",
+      "gold": "Sushi",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Salmon",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Sushi",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Salmon",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "reality shows on tv",
+      "count": 5,
+      "why": "partial match on 'tv' (unexplained: reality on)",
+      "gold": "RealityTV",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Screen",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TVShow",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "RealityTV",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "TVShow",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "Screen",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "aged cheeses",
+      "count": 5,
+      "why": "partial match on 'cheese' (unexplained: aged)",
+      "gold": "Cheese",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Cheese",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Dairy",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Meat",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Cheese",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "Paneer",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "phrase": "anything deep fried",
+      "count": 4,
+      "why": "unmapped",
+      "gold": "FriedFood",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Meat",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "JapaneseCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "FriedFood",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "phrase": "the eiffel tower",
+      "count": 4,
+      "why": "unmapped",
+      "gold": "Paris",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Rome",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Italy",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Dubai",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Paris",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "apple's phones",
+      "count": 4,
+      "why": "partial match on 'phone' (unexplained: apple')",
+      "gold": "Iphone",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Smartphone",
+          "score": 0.78,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Electronics",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Iphone",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Smartphone",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "Iphone",
+          "score": 0.478
+        }
+      ]
+    },
+    {
+      "phrase": "midnight flights",
+      "count": 4,
+      "why": "partial match on 'flight' (unexplained: midnight)",
+      "gold": "RedEyeFlight",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Flight",
+          "score": 0.78,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Thailand",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TransportMode",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Flight",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "RedEyeFlight",
+          "score": 0.387
+        }
+      ]
+    },
+    {
+      "phrase": "anything with meat in it",
+      "count": 3,
+      "why": "partial match on 'meat' (unexplained: with in it)",
+      "gold": "Meat",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Meat",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "JapaneseCuisine",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Meat",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "anything from the sea",
+      "count": 3,
+      "why": "unmapped",
+      "gold": "Seafood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Crab",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "the burj khalifa",
+      "count": 3,
+      "why": "unmapped",
+      "gold": "Dubai",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Rome",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Italy",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Dubai",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Dubai",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "heavy guitar music",
+      "count": 3,
+      "why": "unmapped",
+      "gold": "Metal",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Genre_Rock",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Metal",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Music",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "cheap trendy clothes",
+      "count": 3,
+      "why": "partial match on 'clothes' (unexplained: cheap trendy)",
+      "gold": "FastFashion",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Clothing",
+          "score": 0.9,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Shopping",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "FastFashion",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Clothing",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "pizza slices",
+      "count": 3,
+      "why": "partial match on 'pizza' (unexplained: slice)",
+      "gold": "Pizza",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Pizza",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndianCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Pizza",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "mountain getaways",
+      "count": 3,
+      "why": "partial match on 'mountain' (unexplained: getaway)",
+      "gold": "MountainTrip",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "MountainTrip",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TravelStyle",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Goa",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "MountainTrip",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "sweet treats after dinner",
+      "count": 3,
+      "why": "partial match on 'sweet' (unexplained: treat after dinner)",
+      "gold": "Dessert",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "SweetFood",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "StreetFood",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "SweetFood",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "Dessert",
+          "score": 0.405
+        }
+      ]
+    },
+    {
+      "phrase": "thin-crust pizza",
+      "count": 3,
+      "why": "partial match on 'pizza' (unexplained: thin crust)",
+      "gold": "Pizza",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Pizza",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Shellfish",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "ItalianCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Pizza",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "self-improvement books",
+      "count": 3,
+      "why": "unmapped",
+      "gold": "SelfHelp",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "NonFiction",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "SelfHelp",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Books",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Books",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "the london eye",
+      "count": 3,
+      "why": "partial match on 'london' (unexplained: eye)",
+      "gold": "London",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "London",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "UK",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Switzerland",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "London",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "jazz records",
+      "count": 3,
+      "why": "partial match on 'jazz' (unexplained: record)",
+      "gold": "Genre_Jazz",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Genre_Jazz",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Genre_Jazz",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "throwaway fashion",
+      "count": 3,
+      "why": "partial match on 'fashion' (unexplained: throwaway)",
+      "gold": "FastFashion",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Clothing",
+          "score": 0.78,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Shopping",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "FastFashion",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Clothing",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "grilled chicken",
+      "count": 3,
+      "why": "partial match on 'chicken' (unexplained: grilled)",
+      "gold": "Poultry",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Poultry",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Meat",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Poultry",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "chilli-laden food",
+      "count": 2,
+      "why": "partial match on 'chilli' (unexplained: laden)",
+      "gold": "SpicyFood",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "SpicyFood",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Coffee",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Food",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "SpicyFood",
+          "score": 0.393
+        }
+      ]
+    },
+    {
+      "phrase": "sun and sand holidays",
+      "count": 2,
+      "why": "partial match on 'holiday' (unexplained: sun and sand)",
+      "gold": "BeachHoliday",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Travel",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "TravelStyle",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Flight",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Travel",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "cold brew",
+      "count": 2,
+      "why": "unmapped",
+      "gold": "Coffee",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Beverage",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "KoreanCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "slasher flicks",
+      "count": 2,
+      "why": "unmapped",
+      "gold": "HorrorMovie",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "HorrorMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "BollywoodMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "HorrorMovie",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "phrase": "wood-fired pizza",
+      "count": 2,
+      "why": "partial match on 'pizza' (unexplained: wood fired)",
+      "gold": "Pizza",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Pizza",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndianCuisine",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Pizza",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "fried stuff",
+      "count": 2,
+      "why": "unmapped",
+      "gold": "FriedFood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Rice",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Grains",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Curry",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "mutton curry",
+      "count": 2,
+      "why": "partial match on 'curry' (unexplained: mutton)",
+      "gold": "RedMeat",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Curry",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "IceCream",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Dessert",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "RedMeat",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "Curry",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "nigiri sets",
+      "count": 2,
+      "why": "partial match on 'nigiri' (unexplained: set)",
+      "gold": "Sushi",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Sushi",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Alcohol",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Sushi",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "fiery curries",
+      "count": 2,
+      "why": "partial match on 'curry' (unexplained: fiery)",
+      "gold": "SpicyFood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Curry",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Dessert",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Sushi",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Curry",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "black tea",
+      "count": 2,
+      "why": "partial match on 'tea' (unexplained: black)",
+      "gold": "Tea",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Tea",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Beverage",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.39,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Tea",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "puddings and desserts",
+      "count": 2,
+      "why": "partial match on 'dessert' (unexplained: pudding and)",
+      "gold": "Dessert",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Dessert",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Fish",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Seafood",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Dessert",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "lazy beach days",
+      "count": 1,
+      "why": "partial match on 'beach' (unexplained: lazy day)",
+      "gold": "BeachHoliday",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "BeachHoliday",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Flight",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TransportMode",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "BeachHoliday",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "pork ribs",
+      "count": 1,
+      "why": "partial match on 'pork' (unexplained: rib)",
+      "gold": "RedMeat",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "RedMeat",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Vegetables",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "RedMeat",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "my morning espresso",
+      "count": 1,
+      "why": "partial match on 'espresso' (unexplained: morning)",
+      "gold": "Coffee",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Coffee",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "KoreanCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Coffee",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "ghost movies",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "HorrorMovie",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "HorrorMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "BollywoodMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Movie",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "books about better habits",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "SelfHelp",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "SelfHelp",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "NonFiction",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Books",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "really hot dishes",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "SpicyFood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.53,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "SpicyFood",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Food",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "the new iphone",
+      "count": 1,
+      "why": "partial match on 'iphone' (unexplained: new)",
+      "gold": "Iphone",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Iphone",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Smartphone",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Iphone",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "ocean food",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "Seafood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Cuisine",
+          "score": 0.45,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Tea",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Food",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "KoreanCuisine",
+          "score": 0.429
+        }
+      ]
+    },
+    {
+      "phrase": "bebop",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "Genre_Jazz",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Genre_Jazz",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Music",
+          "score": 0.15,
+          "source": "evidence"
+        }
+      ]
+    },
+    {
+      "phrase": "garlic prawns",
+      "count": 1,
+      "why": "partial match on 'prawn' (unexplained: garlic)",
+      "gold": "Shrimp",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Shrimp",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "StreetFood",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Shrimp",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "silly comedies",
+      "count": 1,
+      "why": "partial match on 'comedy' (unexplained: silly)",
+      "gold": "ComedyMovie",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "ComedyMovie",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Movie",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "ThrillerMovie",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "ComedyMovie",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "a cup of chai",
+      "count": 1,
+      "why": "partial match on 'chai' (unexplained: cup of)",
+      "gold": "Tea",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Tea",
+          "score": 0.7,
+          "source": "lexical"
+        },
+        {
+          "kind": "new",
+          "parent": "Pasta",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "ItalianCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Tea",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "the goa beaches",
+      "count": 1,
+      "why": "partial match on 'beach' (unexplained: goa)",
+      "gold": "Goa",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "BeachHoliday",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Goa",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndiaDestinations",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Goa",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "BeachHoliday",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "dating shows",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "RealityTV",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "RealityTV",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "TVShow",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "TVShow",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "the french capital",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "Paris",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Bali",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Asia",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Venice",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "FrenchFries",
+          "score": 0.375
+        }
+      ]
+    },
+    {
+      "phrase": "anything with mushrooms",
+      "count": 1,
+      "why": "partial match on 'mushroom' (unexplained: with)",
+      "gold": "Mushroom",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Mushroom",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Vegetables",
+          "score": 0.28,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Mushroom",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "sashimi platters",
+      "count": 1,
+      "why": "partial match on 'sashimi' (unexplained: platter)",
+      "gold": "Sushi",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Sushi",
+          "score": 0.74,
+          "source": "lexical+evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Durian",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Fruit",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Sushi",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "phrase": "the hills",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "MountainTrip",
+      "decision": "auto-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "Goa",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "IndiaDestinations",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "MountainTrip",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "MountainTrip",
+          "score": 0.5
+        },
+        {
+          "kind": "alias",
+          "of": "SpicyFood",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "phrase": "food with a lot of heat",
+      "count": 1,
+      "why": "unmapped",
+      "gold": "SpicyFood",
+      "decision": "manual-alias",
+      "top_proposals": [
+        {
+          "kind": "new",
+          "parent": "FastFood",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "Food",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "new",
+          "parent": "ThaiCuisine",
+          "score": 0.15,
+          "source": "evidence"
+        },
+        {
+          "kind": "alias",
+          "of": "Food",
+          "score": 0.5
+        }
+      ]
+    }
+  ]
+}
